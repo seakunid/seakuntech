@@ -19,7 +19,7 @@
       >
         <img
           class="tn:w-full md:w-3/4"
-          :src="`/images/icons/${dataProvider.slug}.svg`"
+          :src="`/seakuntech/images/icons/${dataProvider.slug}.svg`"
           alt="provider icon"
         />
       </div>
