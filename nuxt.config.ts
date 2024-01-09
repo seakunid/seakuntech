@@ -4,13 +4,13 @@ export default defineNuxtConfig({
   // ssr: false,
   // target: 'static',
   app: {
-    baseURL: '/seakuntech/',
-    buildAssetsDir: 'assets'
+    baseURL: '/seakuntech/'
+    // buildAssetsDir: 'assets'
   },
   // router: {
   //   base: "/seakuntech/"
   // },
-  css: ["~/assets/css/main.css"],
+  css: ["@/assets/css/main.css"],
   postcss: {
     plugins: {
       tailwindcss: {},
