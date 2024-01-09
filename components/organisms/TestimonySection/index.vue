@@ -1,5 +1,5 @@
 <template>
-  <client-only>
+  <!-- <client-only> -->
     <div class="w-full mt-7 md:mt-[35px] lg:mt-[52px] container" id="testimony">
       <header class="lg:text-left mb-7 lg:mb-8 text-[#15382F] w-full">
         <h1
@@ -49,7 +49,7 @@
         </div>
       </div>
     </div>
-  </client-only>
+  <!-- </client-only> -->
 </template>
 
 <script>
