@@ -42,7 +42,7 @@
           </p>
         </div>
       </div>
-      <div class="mt-4 md:mb-[25px] mb-3 text-center">
+      <!-- <div class="mt-4 md:mb-[25px] mb-3 text-center">
         <Button
           variant="primary"
           class-wrapper="bg-[#08A081] !text-white !rounded-[6px] !text-sm md:!text-base lg:!text-lg "
@@ -50,7 +50,7 @@
           class="md:w-[90px] tn:w-[76px] font-bold py-[4.5px]"
           :disabled="!product.isActive"
         />
-      </div>
+      </div> -->
 
       <div class="absolute top-0 right-0">
         <img
