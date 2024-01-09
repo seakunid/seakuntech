@@ -16,13 +16,13 @@
       >
         <img
           v-if="product.variants"
-          :src="require(`/images/product/${product.slug}.png`)"
+          :src="`/seakuntech/images/product/${product.slug}.png`"
           alt="provider"
           class="block object-cover min-h-full min-w-full"
         />
         <img
           v-else
-          :src="require(`/images/product/on demand/new/${product.slug}.png`)"
+          :src="`/seakuntech/images/product/on demand/new/${product.slug}.png`"
           alt="provider"
           class="justify-center mx-auto tn:h-9 tn:w-[45px] md:h-[45px] md:w-[48px]"
         />
