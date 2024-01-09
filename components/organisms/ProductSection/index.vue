@@ -139,7 +139,7 @@ export default {
       dataProposeProvider: {
         name: "Layananmu",
         preview: "belum terdaftar?",
-        img: "/images/product/propose-new.svg",
+        img: "images/product/propose-new.svg",
       },
       isShowModalPackages: false,
       choosedProvider: {},
