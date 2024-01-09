@@ -135,7 +135,7 @@
           <div class="flex space-x-2">
             <img src="/images/footer/email-icon.svg" alt="#" />
             <a href="mailto:admin@seakun.id">
-              <p>admin@seakun.id</p>
+              <p>official@seakun.tech</p>
             </a>
           </div>
           <!-- <div class="flex space-x-2">

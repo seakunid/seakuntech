@@ -1,5 +1,5 @@
 <template>
-  <div id="navbar" class="w-full fixed z-40 py-3 lg:py-0 bg-none">
+  <div id="navbar" class="w-full fixed z-40 py-3 lg:py-2 bg-white shadow">
     <div
       v-if="open"
       class="opacity-20 fixed inset-0 z-90 bg-black"
@@ -7,15 +7,13 @@
     ></div>
     <div class="static z-0 w-full text-gray-700">
       <div class="container lg:flex lg:justify-between lg:items-center">
-        <nuxt-link to="/">
-          <div @click="scrollToTop">
-            <img
-              class="h-[40px]"
-              src="/images/navbar/brand_seakun.svg"
-              alt="brand seakun"
-            />
-          </div>
-        </nuxt-link>
+        <a href="/">
+          <img
+            class="h-[40px]"
+            src="/images/navbar/brand_seakun.svg"
+            alt="brand seakun"
+          />
+        </a>
         <div
           class="absolute top-1 right-1 py-4 px-4 md:px-4 lg:top-0 lg:right-0 lg:relative z-100 flex flex-col w-3/5 md:w-1/2 lg:w-4/5 rounded-xl lg:p-0 lg:justify-end lg:flex-row lg:items-center"
           :class="{ shadow: open, 'bg-white': open }"
@@ -58,7 +56,6 @@
             <div
               class="cursor-pointer text-right my-3 text-sm md:text-[14px] font-semibold md:font-bold text-secondary rounded-lg md:py-0 md:mt-0 hover:opacity-50 focus:opacity-50 lg:ml-8 xl:ml-12 relative"
               :class="`${navbar.tag === 'profile' ? 'lg:my-1' : 'lg:my-3'}`"
-              @click="scrollToSection(navbar)"
             >
               <div v-if="navbar.tag === 'profile'">
                 <img
@@ -68,9 +65,9 @@
                 />
                 <p class="lg:hidden">{{ navbar.label }}</p>
               </div>
-              <p v-else>
+              <a :href="`/#${navbar.tag}`" v-else>
                 {{ navbar.label }}
-              </p>
+              </a>
               <template v-if="navbar.tag === 'sekurban'">
                 <img
                   class="transition-opacity ease-in-out delay-50 duration-500 absolute -top-1 -right-1 w-[9px]"
@@ -156,9 +153,9 @@ export default {
   },
 
   mounted() {
-    window.onscroll = () => {
-      this.handleScrollEffect();
-    };
+    // window.onscroll = () => {
+    //   this.handleScrollEffect();
+    // };
 
     // setInterval(() => {
     //   this.showSpark1 = !this.showSpark1;

@@ -4,7 +4,7 @@
       class="absolute top-0 left-0 z-0 w-full tn:h-[411px] xl:h-[520px] bg-header"
     ></div>
     <div
-      class="tn:px-[24px] md:!container tn:pt-20 md:pt-28 lg:pt-36 relative z-20"
+      class="tn:px-[24px] md:!container tn:pt-20 md:pt-24 lg:pt-28 relative z-20"
     >
       <div
         class="w-full rounded-2xl bg-banner flex tn:flex-col md:flex-row md:justify-between md:items-end tn:py-8"
@@ -30,13 +30,14 @@
             Cek pilihan layanan di Seakun sekarang
           </p>
           <div class="text-center md:text-left">
-            <Button
-              class-wrapper="!bg-[#15382F] !text-[14px] lg:!text-[24px] text-white w-full !h-[46px] lg:!w-[240px] lg:!h-[64px] rounded-lg font-bold "
-              label="Lihat Layanan"
-              class="tn:mt-6 xl:mt-12 md:w-auto"
-              add-class="text-[24px] font-bold "
-              @click="onClickOrder"
-            />
+            <NuxtLink to="/#provider">
+              <Button
+                class-wrapper="!bg-[#15382F] !text-[14px] lg:!text-[24px] text-white w-full !h-[46px] lg:!w-[240px] lg:!h-[64px] rounded-lg font-bold "
+                label="Lihat Layanan"
+                class="tn:mt-6 xl:mt-12 md:w-auto"
+                add-class="text-[24px] font-bold "
+              />
+            </NuxtLink>
           </div>
         </div>
         <div class="tn:px-[27px] md:px-0 md:pr-[42px] tn:order-1 md:order-2">
@@ -61,18 +62,18 @@ export default {
     return {
       textToType: ["T. Seakun Global Teknologi"],
       currentTextIndex: 0,
-      typedText: "P",
+      typedText: "PT. Seakun Global Teknologi",
       currentText: "",
       index: 0,
     };
   },
   mounted() {
-    setInterval(() => {
-      this.currentTextIndex =
-        (this.currentTextIndex + 1) % this.textToType.length;
-      this.currentText = this.textToType[this.currentTextIndex];
-      this.typeText();
-    }, 3000);
+    // setInterval(() => {
+    //   this.currentTextIndex =
+    //     (this.currentTextIndex + 1) % this.textToType.length;
+    //   this.currentText = this.textToType[this.currentTextIndex];
+    //   this.typeText();
+    // }, 3000);
   },
   methods: {
     typeText() {
