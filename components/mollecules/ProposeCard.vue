@@ -15,16 +15,14 @@
         </h1>
       </div>
       <div class="md:mt-4 mt-[11px] md:mb-[25px] tn:mb-3">
-        <nuxt-link to="/vote">
-          <Button
-            label="Ajukan layanan"
-            class="text-base text-[#08A081] mx-auto border-[1px] border-[#08A081] md:block tn:hidden px-[15px] py-1 rounded-[6px]"
-          />
-          <Button
-            label="Ajukan"
-            class="text-sm text-[#08A081] border-[1px] border-[#08A081] md:hidden px-[15px] py-1 rounded-[6px]"
-          />
-        </nuxt-link>
+        <Button
+          label="Ajukan layanan"
+          class="text-base text-[#08A081] mx-auto border-[1px] border-[#08A081] md:block tn:hidden px-[15px] py-1 rounded-[6px]"
+        />
+        <Button
+          label="Ajukan"
+          class="text-sm text-[#08A081] border-[1px] border-[#08A081] md:hidden px-[15px] py-1 rounded-[6px]"
+        />
       </div>
     </div>
   </div>
@@ -44,5 +42,3 @@ export default {
   },
 };
 </script>
-
-<style lang="scss" scoped></style>
