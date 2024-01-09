@@ -59,9 +59,9 @@ export default {
   },
   data() {
     return {
-      textToType: ["PT. Seakun Global Teknologi"],
+      textToType: ["T. Seakun Global Teknologi"],
       currentTextIndex: 0,
-      typedText: "",
+      typedText: "P",
       currentText: "",
       index: 0,
     };
@@ -77,7 +77,7 @@ export default {
   methods: {
     typeText() {
       this.index = 0;
-      this.typedText = "";
+      this.typedText = "P";
       const typeInterval = setInterval(() => {
         if (this.index < this.currentText.length) {
           this.typedText += this.currentText.charAt(this.index);
