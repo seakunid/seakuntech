@@ -5,7 +5,7 @@ export default defineNuxtConfig({
     baseURL: '/seakuntech/'
     // buildAssetsDir: 'assets'
   },
-  css: ["@/assets/css/main.css"],
+  css: ["~/assets/css/main.css"],
   postcss: {
     plugins: {
       tailwindcss: {},
