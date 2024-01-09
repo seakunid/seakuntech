@@ -5,7 +5,7 @@
     <div class="text-center md:pt-[26px] tn:pt-4">
       <div class="md:px-[10.5px] tn:px-[6px]">
         <img
-          :src="`/seakuntech/${propose.img}`"
+          :src="`/${propose.img}`"
           alt="propose your business"
           class="mx-auto mb-2 tn:h-9 tn:w-[45px] md:w-auto"
         />

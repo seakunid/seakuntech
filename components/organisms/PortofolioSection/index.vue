@@ -20,7 +20,7 @@
         <div class="tn:flex tn:space-x-2 md:space-x-3 items-center">
           <img
             class="tn:w-[20px] md:w-[32px]"
-            :src="`/seakuntech/images/portofolio/${porto.icon}.svg`"
+            :src="`/images/portofolio/${porto.icon}.svg`"
             :alt="porto.name"
           />
           <div class="text-left">

@@ -6,7 +6,7 @@
     <section class="p-4">
       <div class="w-full mx-auto">
         <img
-          :src="`/seakuntech/images/testimony/${dataTestimony.images}`"
+          :src="`/images/testimony/${dataTestimony.images}`"
           :alt="dataTestimony.name"
           class="w-full h-[135px] md:h-[150px] lg:h-[177px] rounded-[6px] object-cover object-top"
         />

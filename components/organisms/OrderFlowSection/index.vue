@@ -18,7 +18,7 @@
         >
           <img
             class="mx-auto w-[85px] md:w-[140px]"
-            :src="`/seakuntech/images/order flow/${flow.img}.svg`"
+            :src="`/images/order flow/${flow.img}.svg`"
             :alt="flow.desc"
           />
           <div

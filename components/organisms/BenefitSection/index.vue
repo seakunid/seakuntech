@@ -29,7 +29,7 @@
           >
             <img
               class=""
-              :src="`/seakuntech/images/benefit/${benefit.icon}.svg`"
+              :src="`/images/benefit/${benefit.icon}.svg`"
               :alt="benefit.text"
             />
           </div>
@@ -60,7 +60,7 @@
           >
             <img
               class=""
-              :src="`/seakuntech/images/benefit/${benefit.icon}.svg`"
+              :src="`/images/benefit/${benefit.icon}.svg`"
               :alt="benefit.text"
             />
           </div>
