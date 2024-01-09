@@ -14,7 +14,7 @@
         </h1>
       </header>
       <div class="relative md:pr-3">
-        <ButtonChevron
+        <!-- <ButtonChevron
           v-show="!isPillEndScroll"
           @click-chevron="scrollPill('right')"
           class="absolute top-1/2 -translate-y-1/2 right-0 cursor-pointer hidden md:block"
@@ -23,7 +23,7 @@
           v-show="pillScrollPosition != 0"
           @click-chevron="scrollPill('left')"
           class="absolute top-1/2 -translate-y-1/2 -left-5 cursor-pointer hidden md:block rotate-180"
-        />
+        /> -->
         <div
           id="semabar-testimony-wrapper"
           class="flex flex-col md:flex-row gap-5 overflow-x-scroll testimony-semabar scroll-smooth"
@@ -68,9 +68,8 @@ export default {
     return {
       pillScrollPosition: 0,
       isPillEndScroll: false,
-      filteredList: [],
-      dataTestimony: [
-        {
+      filteredList: [
+      {
           name: "Guy Hawkins",
           address: "Medan, Sumatera Utara",
           text: "Terima kasih kepada Seakun & Kitabisa telah membantu masyarakat. Semoga semuanya sehat...",
@@ -91,56 +90,79 @@ export default {
           images: "samsul.jpeg",
           testimony: "Semabar",
         },
-        {
-          name: "Fauzan",
-          address: "Medan, Sumatera Utara",
-          text: "Rasanya bukan sekedar main sepakbola, karena kita jadi akrab di lapangan maupun di luar lapangan. Selain sehat, juga bisa punya persahabatan baru.",
-          images: "fauzan.jpeg",
-          testimony: "Semabar",
-        },
-        {
-          name: "Gilang",
-          address: "Medan, Sumatera Utara",
-          text: "Selama join main minisoccer di Semabar makin nambah teman, nambah wawasan, sehat, dan matchnya itu seru! Yang pastinya mantap lah...",
-          images: "gilang.jpeg",
-          testimony: "Semabar",
-        },
-        {
-          name: "Iqbal",
-          address: "Medan, Sumatera Utara",
-          text: "Kita bakal ketemu sama orang baru yang tidak kita kenal, tapi meraka baik baik semua. Sistem yang diterapkan untuk pertandingan juga sangat efisien. Fun banget main bareng mereka.",
-          images: "iqbal.jpeg",
-          testimony: "Semabar",
-        },
       ],
+      // dataTestimony: [
+      //   {
+      //     name: "Guy Hawkins",
+      //     address: "Medan, Sumatera Utara",
+      //     text: "Terima kasih kepada Seakun & Kitabisa telah membantu masyarakat. Semoga semuanya sehat...",
+      //     images: "hawkins.webp",
+      //     testimony: "Sequrban",
+      //   },
+      //   {
+      //     name: "Khoir",
+      //     address: "Semarang, Jawa Tengah",
+      //     text: "Minisoccer bareng kawan di Seakun seru!!! Lapangan yang nyaman, atmosfer penuh semangat, dan teman-teman yang ramah.",
+      //     images: "khoir.jpeg",
+      //     testimony: "Semabar",
+      //   },
+      //   {
+      //     name: "Samsul",
+      //     address: "Medan, Sumatera Utara",
+      //     text: "Lapangannya bagus, matchnya sudah diatur, dan ketemu temen baru yang asik dan seru. Terima kasih Seakun untuk pengalaman bermain yang tak terlupakan!",
+      //     images: "samsul.jpeg",
+      //     testimony: "Semabar",
+      //   },
+      //   {
+      //     name: "Fauzan",
+      //     address: "Medan, Sumatera Utara",
+      //     text: "Rasanya bukan sekedar main sepakbola, karena kita jadi akrab di lapangan maupun di luar lapangan. Selain sehat, juga bisa punya persahabatan baru.",
+      //     images: "fauzan.jpeg",
+      //     testimony: "Semabar",
+      //   },
+      //   {
+      //     name: "Gilang",
+      //     address: "Medan, Sumatera Utara",
+      //     text: "Selama join main minisoccer di Semabar makin nambah teman, nambah wawasan, sehat, dan matchnya itu seru! Yang pastinya mantap lah...",
+      //     images: "gilang.jpeg",
+      //     testimony: "Semabar",
+      //   },
+      //   {
+      //     name: "Iqbal",
+      //     address: "Medan, Sumatera Utara",
+      //     text: "Kita bakal ketemu sama orang baru yang tidak kita kenal, tapi meraka baik baik semua. Sistem yang diterapkan untuk pertandingan juga sangat efisien. Fun banget main bareng mereka.",
+      //     images: "iqbal.jpeg",
+      //     testimony: "Semabar",
+      //   },
+      // ],
       windowWidth: 0,
       allreadyDisplayData: false,
     };
   },
   mounted() {
-    this.waitForElement("#semabar-testimony-wrapper").then((elm) => {
-      elm.addEventListener("scroll", () => {
-        const pillMaxScrollWidth = elm.scrollWidth - elm.clientWidth;
-        this.pillScrollPosition = elm.scrollLeft;
-        if (this.pillScrollPosition >= pillMaxScrollWidth) {
-          this.isPillEndScroll = true;
-        } else {
-          this.isPillEndScroll = false;
-        }
-      });
-    });
+    // this.waitForElement("#semabar-testimony-wrapper").then((elm) => {
+    //   elm.addEventListener("scroll", () => {
+    //     const pillMaxScrollWidth = elm.scrollWidth - elm.clientWidth;
+    //     this.pillScrollPosition = elm.scrollLeft;
+    //     if (this.pillScrollPosition >= pillMaxScrollWidth) {
+    //       this.isPillEndScroll = true;
+    //     } else {
+    //       this.isPillEndScroll = false;
+    //     }
+    //   });
+    // });
   },
 
-  created() {
-    if (process.client) {
-      this.updateFilteredList();
-      this.windowWidth = window.innerWidth;
-      window.addEventListener("resize", this.updateFilteredList);
-    }
-  },
-  beforeDestroy() {
-    window.removeEventListener("resize", this.updateFilteredList);
-  },
+  // created() {
+  //   if (process.client) {
+  //     this.updateFilteredList();
+  //     this.windowWidth = window.innerWidth;
+  //     window.addEventListener("resize", this.updateFilteredList);
+  //   }
+  // },
+  // beforeDestroy() {
+  //   window.removeEventListener("resize", this.updateFilteredList);
+  // },
   methods: {
     waitForElement,
     updateFilteredList() {
