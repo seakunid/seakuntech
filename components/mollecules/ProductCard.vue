@@ -9,7 +9,6 @@
   >
     <div
       class="relative tn:h-full tn:w-full overflow-hidden flex-nowrap justify-center items-center"
-      @click="product.isActive ? $router.push(product.slug) : null"
     >
       <div
         class="md:mt-[26.5px] tn:mt-3 md:h-[100px] tn:h-16"
@@ -49,6 +48,7 @@
           label="Pesan"
           class="md:w-[90px] tn:w-[76px] font-bold py-[4.5px]"
           :disabled="!product.isActive"
+          @click="$emit('on-click-product', product)"
         />
       </div> -->
 
@@ -81,3 +81,5 @@ export default {
   },
 };
 </script>
+
+<style lang="scss" scoped></style>

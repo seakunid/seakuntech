@@ -26,11 +26,11 @@ export default {
   props: {
     color: {
       typeof: String,
-      default: "#2D2D2D",
+      default: '#2D2D2D',
     },
     addClass: {
       typeof: String,
-      default: "",
+      default: '',
     },
     isShow: {
       typeof: Boolean,
@@ -39,3 +39,5 @@ export default {
   },
 };
 </script>
+
+<style lang="scss" scoped></style>

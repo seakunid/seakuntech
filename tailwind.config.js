@@ -3,17 +3,6 @@ const colors = require("tailwindcss/colors");
 const plugin = require("tailwindcss/plugin");
 
 module.exports = {
-  // mode: 'jit',
-  // purge: {
-  //   content: [
-  //     './components/**/*.{vue,js}',
-  //     './layouts/**/*.vue',
-  //     './pages/**/*.vue',
-  //     './plugins/**/*.{js,ts}',
-  //     './nuxt.config.{js,ts}',
-  //   ],
-  //   safelist: ['bg-red-400', 'bg-red-500'],
-  // },
   content: [
     "./components/**/*.{vue,js}",
     "./layouts/**/*.vue",
@@ -68,83 +57,6 @@ module.exports = {
             maxWidth: "640px",
             paddingLeft: "1rem",
             paddingRight: "1rem",
-          },
-          "@screen md": {
-            maxWidth: "768px",
-            paddingLeft: "2rem",
-            paddingRight: "2rem",
-          },
-          "@screen lg": {
-            maxWidth: "1024px",
-            paddingLeft: "2rem",
-            paddingRight: "2rem",
-          },
-          "@screen xl": {
-            maxWidth: "1440px",
-            paddingLeft: "10rem",
-            paddingRight: "10rem",
-          },
-        },
-        ".container-sekurban": {
-          width: "100%",
-          marginLeft: "auto",
-          marginRight: "auto",
-          "@screen tn": {
-            maxWidth: "328px",
-          },
-          "@screen sm": {
-            maxWidth: "640px",
-          },
-          "@screen md": {
-            maxWidth: "700px",
-          },
-          "@screen lg": {
-            maxWidth: "960px",
-          },
-          "@screen xl": {
-            maxWidth: "1240px",
-          },
-        },
-        ".container-dashboard-user": {
-          width: "100%",
-          marginLeft: "auto",
-          marginRight: "auto",
-          "@screen tn": {
-            maxWidth: "400px",
-            paddingLeft: "1rem",
-            paddingRight: "1rem",
-          },
-          "@screen sm": {
-            maxWidth: "640px",
-            paddingLeft: "1rem",
-            paddingRight: "1rem",
-          },
-          "@screen md": {
-            maxWidth: "768px",
-            paddingLeft: "2rem",
-            paddingRight: "2rem",
-          },
-          "@screen lg": {
-            maxWidth: "1024px",
-            paddingLeft: "2rem",
-            paddingRight: "2rem",
-          },
-          "@screen xl": {
-            maxWidth: "1440px",
-            paddingLeft: "10rem",
-            paddingRight: "10rem",
-          },
-        },
-        ".container-semabar": {
-          width: "100%",
-          marginLeft: "auto",
-          marginRight: "auto",
-          paddingLeft: "1rem",
-          paddingRight: "1rem",
-          "@screen sm": {
-            maxWidth: "640px",
-            paddingLeft: "1.5rem",
-            paddingRight: "1.5rem",
           },
           "@screen md": {
             maxWidth: "768px",
