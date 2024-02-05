@@ -32,13 +32,13 @@
 
 <script>
 // import Modal from "~/components/atoms/Modal.vue";
-// import Button from "~/components/atoms/Button.vue";
+import Button from "~/components/atoms/Button.vue";
 // import WarningInfo from "~/components/mollecules/WarningInfo.vue";
 export default {
   components: {
     // Modal,
     Button,
-    WarningInfo,
+    // WarningInfo,
   },
   props: {
     showModal: {

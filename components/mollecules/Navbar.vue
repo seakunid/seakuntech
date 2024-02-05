@@ -156,7 +156,6 @@ export default {
     // window.onscroll = () => {
     //   this.handleScrollEffect();
     // };
-
     // setInterval(() => {
     //   this.showSpark1 = !this.showSpark1;
     // }, 700);
@@ -194,7 +193,7 @@ export default {
       } else if (menu.tag === "sekurban") {
         this.$router.push("/sekurban");
       } else if (menu.tag === "profile") {
-        this.$router.push("/user/profile");
+        // this.$router.push("/user/profile");
       } else {
         this.scrollToElementWithOffset(menu.tag, 25);
         this.open = false;

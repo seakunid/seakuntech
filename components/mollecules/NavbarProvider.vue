@@ -49,7 +49,7 @@
             <p>Daftar</p>
           </nuxt-link>
         </div>
-        <nuxt-link v-else to="/user/profile">
+        <nuxt-link v-else to="/">
           <img
             :src="`/images/profile-page/avatar/${avatar}.svg`"
             alt="profile"
@@ -83,7 +83,7 @@
         </nuxt-link>
       </div>
       <div v-else class="py-3 border-b">
-        <nuxt-link class="" to="/user/profile">
+        <nuxt-link class="" to="/">
           <div class="mx-auto w-[321px] md:w-full flex items-center gap-3">
             <img
               :src="`/images/profile-page/avatar/${avatar}.svg`"

@@ -1,5 +1,6 @@
 <template>
-  <section
+  <div></div>
+  <!-- <section
     class="rounded-[10px] p-[12px] md:p-4 bg-white h-max"
     style="box-shadow: 0px 2px 8px 0px rgba(28, 37, 44, 0.08)"
   >
@@ -29,7 +30,7 @@
         </p>
       </div>
     </div>
-  </section>
+  </section> -->
 </template>
 
 <script>

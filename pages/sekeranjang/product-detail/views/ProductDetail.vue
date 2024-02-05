@@ -1,5 +1,6 @@
 <template>
-  <div class="tn:pt-14 relative">
+  <div></div>
+  <!-- <div class="tn:pt-14 relative">
     <div
       v-if="!productDetail.loading"
       class="container grid grid-cols-3 items-start gap-8 tn:mt-6 relative"
@@ -54,7 +55,7 @@
         Masa promo berakhir
       </div>
     </div>
-  </div>
+  </div> -->
 </template>
 
 <script>

@@ -1,5 +1,6 @@
 <template>
-  <div>
+  <div></div>
+  <!-- <div>
     <Navbar />
     <div class="max-w-[632px] mx-auto tn:px-4 tn:pt-20 md:pt-28 tn:pb-14">
       <img
@@ -101,7 +102,7 @@
       </div>
     </div>
     <Footer />
-  </div>
+  </div> -->
 </template>
 
 <script>

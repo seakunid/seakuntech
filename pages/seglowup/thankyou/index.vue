@@ -1,5 +1,6 @@
 <template>
-  <div class="thankyou-page-seglowup">
+  <div></div>
+  <!-- <div class="thankyou-page-seglowup">
     <NavbarBlank
       class-name="hidden md:block !bg-white md:border-b border-[#F2F5FA] h-[66px]"
     />
@@ -53,7 +54,6 @@
           <SeglowupShimmerCard v-if="dataDetailOrder.loading" />
           <SeglowupOrderCard
             class="text-dmsans"
-            v-else
             :data-order="dataDetailOrder.data"
           />
           <section>
@@ -78,7 +78,7 @@
       </div>
     </div>
     <Footer />
-  </div>
+  </div> -->
 </template>
 
 <script>

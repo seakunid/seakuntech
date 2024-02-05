@@ -19,10 +19,10 @@
     </div>
 
     <div class="mt-[8px]">
-      <p class="text-[12px] lg:text-base font-bold">Group {{ group.group }}</p>
+      <p class="text-[12px] lg:text-base font-bold">Group</p>
       <hr class="my-[8px]" />
       <div class="space-y-1 lg:space-y-2 xl:space-y-3">
-        <div
+        <!-- <div
           v-for="(member, id) in group.accountGroup"
           :key="id"
           class="flex gap-1 items-start text-[10px] lg:text-base"
@@ -38,7 +38,7 @@
                 : `${member.customerName}`
             }}
           </p>
-        </div>
+        </div> -->
       </div>
     </div>
   </div>

@@ -1,5 +1,6 @@
 <template>
-  <div class="max-w-[632px] mx-auto tn:pt-20 tn:px-4">
+  <div></div>
+  <!-- <div class="max-w-[632px] mx-auto tn:pt-20 tn:px-4">
     <div
       role="button"
       @click="backToProductDetail"
@@ -143,17 +144,17 @@
       @click="onClickOrder"
     />
 
-    <!-- <ModalBlackListWarning
+    <ModalBlackListWarning
       :show-modal="isShowModalBlackList"
       @onClose="closeModalBlackList"
-    /> -->
+    />
 
     <ModalOrderTimeout
       :show-modal="isShowModalTimeout"
       :data-order="dataHelperOrder"
       @onClose="closeModalOrderTimeout"
     />
-  </div>
+  </div> -->
 </template>
 
 <script>

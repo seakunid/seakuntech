@@ -1,5 +1,6 @@
 <template>
-  <div
+  <div></div>
+  <!-- <div
     class="relative z-0 rounded-[8px] md:rounded-[8px] overflow-hidden cursor-pointer h-[85px]"
     :class="`${
       selectedPackage && selectedPackage.packageName == pkg.packageName
@@ -27,7 +28,7 @@
       class="h-[85px] bg-white bg-cover bg-center w-full"
       :style="`background-image: url('/images/product/zap/${pkg.packageName}.svg');`"
     ></div>
-  </div>
+  </div> -->
 </template>
 
 <script>

@@ -62,7 +62,6 @@
               {{ detailsVenue.city }}
             </p>
           </div>
-          <!-- flex -->
           <div class="gap-3 mt-1 md:mt-[11px] hidden">
             <img
               src="/images/icons/atoms/semabar/group.svg"
