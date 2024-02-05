@@ -54,7 +54,7 @@
             <nuxt-link class="hover:no-underline" to="/">Cara Pesan</nuxt-link>
           </li>
           <li>
-            <nuxt-link class="hover:no-underline" to="/"
+            <nuxt-link class="hover:no-underline" to="/terms-of-use"
               >Syarat dan Ketentuan</nuxt-link
             >
           </li>
