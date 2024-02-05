@@ -14,12 +14,12 @@
           <div class="" v-for="(product, id) in dataProductOnDemand" :key="id">
             <ProductCard :product="product" class="md:w-full md:h-full" />
           </div>
-          <!-- <div class="">
+          <div class="">
             <ProposeCard
               :propose="dataProposeProvider"
               class="md:w-full h-full"
             />
-          </div> -->
+          </div>
         </div>
       </div>
     </div>
@@ -45,37 +45,37 @@ export default {
         name: "",
       },
       dataProductOnDemand: [
-        // {
-        //   name: "Semabar",
-        //   slug: "semabar",
-        //   img: "/images/product/on demand/new/semabar.png",
-        //   isActive: true,
-        //   preview: "(Main Bareng)",
-        // },
-        // {
-        //   name: "SeGlowUp",
-        //   slug: "seglowup",
-        //   img: "/images/product/on demand/new/seglowup.png",
-        //   isActive: true,
-        //   // preview:
-        //   //   'Cari teman patungan beli barang Buy 1 Get 1 atau beli barang dengan kuantitas banyak untuk mendapatkan discount sampai 50%.',
-        // },
-        // {
-        //   name: "Sekurban",
-        //   slug: "sekurban",
-        //   img: "/images/product/on demand/new/sekurban.png",
-        //   isActive: true,
-        //   // preview:
-        //   //   'Cari teman patungan beli barang Buy 1 Get 1 atau beli barang dengan kuantitas banyak untuk mendapatkan discount sampai 50%.',
-        // },
-        // {
-        //   name: "Sekeranjang",
-        //   slug: "sekeranjang",
-        //   img: "/images/product/on demand/new/sekeranjang.png",
-        //   isActive: true,
-        //   // preview:
-        //   //   'Cari teman patungan beli barang Buy 1 Get 1 atau beli barang dengan kuantitas banyak untuk mendapatkan discount sampai 50%.',
-        // },
+        {
+          name: "Semabar",
+          slug: "semabar",
+          img: "/images/product/on demand/new/semabar.png",
+          isActive: true,
+          preview: "(Main Bareng)",
+        },
+        {
+          name: "SeGlowUp",
+          slug: "seglowup",
+          img: "/images/product/on demand/new/seglowup.png",
+          isActive: true,
+          // preview:
+          //   'Cari teman patungan beli barang Buy 1 Get 1 atau beli barang dengan kuantitas banyak untuk mendapatkan discount sampai 50%.',
+        },
+        {
+          name: "Sekurban",
+          slug: "sekurban",
+          img: "/images/product/on demand/new/sekurban.png",
+          isActive: true,
+          // preview:
+          //   'Cari teman patungan beli barang Buy 1 Get 1 atau beli barang dengan kuantitas banyak untuk mendapatkan discount sampai 50%.',
+        },
+        {
+          name: "Sekeranjang",
+          slug: "sekeranjang",
+          img: "/images/product/on demand/new/sekeranjang.png",
+          isActive: true,
+          // preview:
+          //   'Cari teman patungan beli barang Buy 1 Get 1 atau beli barang dengan kuantitas banyak untuk mendapatkan discount sampai 50%.',
+        },
         {
           name: "Sefitnes",
           slug: "sefitnes",

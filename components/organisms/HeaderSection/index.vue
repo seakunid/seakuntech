@@ -7,7 +7,7 @@
       class="tn:px-[24px] md:!container tn:pt-20 md:pt-24 lg:pt-28 relative z-20"
     >
       <div
-        class="w-full rounded-2xl bg-banner flex tn:flex-col md:flex-row md:justify-between md:items-center tn:py-8"
+        class="w-full rounded-2xl bg-banner flex tn:flex-col md:flex-row md:justify-between md:items-end tn:py-8"
       >
         <div
           class="tn:pt-[10px] md:py-[32px] lg:py-[42px] tn:px-[24px] md:pl-[40px] lg:pl-[63px] md:pr-0 md:w-[620px] lg:w-[610px] tn:order-2 md:order-1"
@@ -24,12 +24,12 @@
             </p>
           </div>
 
-          <!-- <p
+          <p
             class="text-dark-green tn:text-[14px] lg:text-[24px] tn:mt-3 tn:text-center md:text-left leading-[13px]"
           >
             Cek pilihan layanan di Seakun sekarang
-          </p> -->
-          <!-- <div class="text-center md:text-left">
+          </p>
+          <div class="text-center md:text-left">
             <NuxtLink to="/#provider">
               <Button
                 class-wrapper="!bg-[#15382F] !text-[14px] lg:!text-[24px] text-white w-full !h-[46px] lg:!w-[240px] lg:!h-[64px] rounded-lg font-bold "
@@ -38,7 +38,7 @@
                 add-class="text-[24px] font-bold "
               />
             </NuxtLink>
-          </div> -->
+          </div>
         </div>
         <div class="tn:px-[27px] md:px-0 md:pr-[42px] tn:order-1 md:order-2">
           <img

@@ -9,6 +9,7 @@
   >
     <div
       class="relative tn:h-full tn:w-full overflow-hidden flex-nowrap justify-center items-center"
+      @click="product.isActive ? $router.push(product.slug) : null"
     >
       <div
         class="md:mt-[26.5px] tn:mt-3 md:h-[100px] tn:h-16"
@@ -41,16 +42,15 @@
           </p>
         </div>
       </div>
-      <!-- <div class="mt-4 md:mb-[25px] mb-3 text-center">
+      <div class="mt-4 md:mb-[25px] mb-3 text-center">
         <Button
           variant="primary"
           class-wrapper="bg-[#08A081] !text-white !rounded-[6px] !text-sm md:!text-base lg:!text-lg "
           label="Pesan"
           class="md:w-[90px] tn:w-[76px] font-bold py-[4.5px]"
           :disabled="!product.isActive"
-          @click="$emit('on-click-product', product)"
         />
-      </div> -->
+      </div>
 
       <div class="absolute top-0 right-0">
         <img
@@ -81,5 +81,3 @@ export default {
   },
 };
 </script>
-
-<style lang="scss" scoped></style>
