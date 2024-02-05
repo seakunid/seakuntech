@@ -12,7 +12,9 @@
           class="w-full h-full grid xl:grid-cols-6 lg:grid-cols-5 sm:grid-cols-4 tn:grid-cols-3 tn:gap-3 md:gap-4 lg:gap-8 px-0 justify-center place-items-stretch items-stretch"
         >
           <div class="" v-for="(product, id) in dataProductOnDemand" :key="id">
-            <ProductCard :product="product" class="md:w-full md:h-full" />
+            <nuxt-link :to="product.slug">
+              <ProductCard :product="product" class="md:w-full md:h-full" />
+            </nuxt-link>
           </div>
           <!-- <div class="">
             <ProposeCard
@@ -45,96 +47,96 @@ export default {
         name: "",
       },
       dataProductOnDemand: [
-        // {
-        //   name: "Semabar",
-        //   slug: "semabar",
-        //   img: "/images/product/on demand/new/semabar.png",
-        //   isActive: true,
-        //   preview: "(Main Bareng)",
-        // },
-        // {
-        //   name: "SeGlowUp",
-        //   slug: "seglowup",
-        //   img: "/images/product/on demand/new/seglowup.png",
-        //   isActive: true,
-        //   // preview:
-        //   //   'Cari teman patungan beli barang Buy 1 Get 1 atau beli barang dengan kuantitas banyak untuk mendapatkan discount sampai 50%.',
-        // },
-        // {
-        //   name: "Sekurban",
-        //   slug: "sekurban",
-        //   img: "/images/product/on demand/new/sekurban.png",
-        //   isActive: true,
-        //   // preview:
-        //   //   'Cari teman patungan beli barang Buy 1 Get 1 atau beli barang dengan kuantitas banyak untuk mendapatkan discount sampai 50%.',
-        // },
-        // {
-        //   name: "Sekeranjang",
-        //   slug: "sekeranjang",
-        //   img: "/images/product/on demand/new/sekeranjang.png",
-        //   isActive: true,
-        //   // preview:
-        //   //   'Cari teman patungan beli barang Buy 1 Get 1 atau beli barang dengan kuantitas banyak untuk mendapatkan discount sampai 50%.',
-        // },
         {
-          name: "Sefitnes",
-          slug: "sefitnes",
-          img: "/images/product/on demand/new/sefitnes.png",
-          isActive: false,
+          name: "Semabar",
+          slug: "semabar",
+          img: "/images/product/on demand/new/semabar.png",
+          isActive: true,
+          preview: "(Main Bareng)",
+        },
+        {
+          name: "SeGlowUp",
+          slug: "seglowup",
+          img: "/images/product/on demand/new/seglowup.png",
+          isActive: true,
           // preview:
-          //   'Cari teman patungan berlangganan gym, fitness dan fasilitas olahraga untuk mendapatakan potongan harga.',
+          //   'Cari teman patungan beli barang Buy 1 Get 1 atau beli barang dengan kuantitas banyak untuk mendapatkan discount sampai 50%.',
         },
         {
-          name: "Seatap",
-          slug: "seatap",
-          img: "/images/product/on demand/new/seatap.png",
-          isActive: false,
+          name: "Sekurban",
+          slug: "sekurban",
+          img: "/images/product/on demand/new/sekurban.png",
+          isActive: true,
           // preview:
-          //   'Cari teman patungan untuk sewa rumah, kostan atau apartemen.',
+          //   'Cari teman patungan beli barang Buy 1 Get 1 atau beli barang dengan kuantitas banyak untuk mendapatkan discount sampai 50%.',
         },
         {
-          name: "Sekelas",
-          slug: "sekelas",
-          img: "/images/product/on demand/new/sekelas.png",
-          isActive: false,
+          name: "Sekeranjang",
+          slug: "sekeranjang",
+          img: "/images/product/on demand/new/sekeranjang.png",
+          isActive: true,
           // preview:
-          //   'Cari teman patungan untuk beli dan berlangganan kelas online atau offline.',
+          //   'Cari teman patungan beli barang Buy 1 Get 1 atau beli barang dengan kuantitas banyak untuk mendapatkan discount sampai 50%.',
         },
-        {
-          name: "Sekatering",
-          slug: "sekatering",
-          img: "/images/product/on demand/new/sekatering.png",
-          isActive: false,
-          // preview: 'Cari teman patungan berlangganan katering terdekat.',
-        },
-        {
-          name: "Sekantor",
-          slug: "sekantor",
-          img: "/images/product/on demand/new/sekantor.png",
-          isActive: false,
-          // preview: 'Cari teman patungan berlangganan katering terdekat.',
-        },
-        {
-          name: "Sejalan",
-          slug: "sejalan",
-          img: "/images/product/on demand/new/sejalan.png",
-          isActive: false,
-          // preview: 'Berlangganan bersama ojek online terpercaya.',
-        },
-        {
-          name: "Seumrah",
-          slug: "seumrah",
-          img: "/images/product/on demand/new/seumrah.png",
-          isActive: false,
-          // preview: 'Berlangganan bersama ojek online terpercaya.',
-        },
-        {
-          name: "Setrip",
-          slug: "setrip",
-          img: "/images/product/on demand/new/setrip.png",
-          isActive: false,
-          // preview: 'Berlangganan bersama ojek online terpercaya.',
-        },
+        // {
+        //   name: "Sefitnes",
+        //   slug: "sefitnes",
+        //   img: "/images/product/on demand/new/sefitnes.png",
+        //   isActive: false,
+        //   // preview:
+        //   //   'Cari teman patungan berlangganan gym, fitness dan fasilitas olahraga untuk mendapatakan potongan harga.',
+        // },
+        // {
+        //   name: "Seatap",
+        //   slug: "seatap",
+        //   img: "/images/product/on demand/new/seatap.png",
+        //   isActive: false,
+        //   // preview:
+        //   //   'Cari teman patungan untuk sewa rumah, kostan atau apartemen.',
+        // },
+        // {
+        //   name: "Sekelas",
+        //   slug: "sekelas",
+        //   img: "/images/product/on demand/new/sekelas.png",
+        //   isActive: false,
+        //   // preview:
+        //   //   'Cari teman patungan untuk beli dan berlangganan kelas online atau offline.',
+        // },
+        // {
+        //   name: "Sekatering",
+        //   slug: "sekatering",
+        //   img: "/images/product/on demand/new/sekatering.png",
+        //   isActive: false,
+        //   // preview: 'Cari teman patungan berlangganan katering terdekat.',
+        // },
+        // {
+        //   name: "Sekantor",
+        //   slug: "sekantor",
+        //   img: "/images/product/on demand/new/sekantor.png",
+        //   isActive: false,
+        //   // preview: 'Cari teman patungan berlangganan katering terdekat.',
+        // },
+        // {
+        //   name: "Sejalan",
+        //   slug: "sejalan",
+        //   img: "/images/product/on demand/new/sejalan.png",
+        //   isActive: false,
+        //   // preview: 'Berlangganan bersama ojek online terpercaya.',
+        // },
+        // {
+        //   name: "Seumrah",
+        //   slug: "seumrah",
+        //   img: "/images/product/on demand/new/seumrah.png",
+        //   isActive: false,
+        //   // preview: 'Berlangganan bersama ojek online terpercaya.',
+        // },
+        // {
+        //   name: "Setrip",
+        //   slug: "setrip",
+        //   img: "/images/product/on demand/new/setrip.png",
+        //   isActive: false,
+        //   // preview: 'Berlangganan bersama ojek online terpercaya.',
+        // },
       ],
       dataProposeProvider: {
         name: "Layananmu",

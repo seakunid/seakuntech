@@ -29,7 +29,7 @@
           >
             Cek pilihan layanan di Seakun sekarang
           </p> -->
-          <!-- <div class="text-center md:text-left">
+          <div class="text-center md:text-left">
             <NuxtLink to="/#provider">
               <Button
                 class-wrapper="!bg-[#15382F] !text-[14px] lg:!text-[24px] text-white w-full !h-[46px] lg:!w-[240px] lg:!h-[64px] rounded-lg font-bold "
@@ -38,7 +38,7 @@
                 add-class="text-[24px] font-bold "
               />
             </NuxtLink>
-          </div> -->
+          </div>
         </div>
         <div class="tn:px-[27px] md:px-0 md:pr-[42px] tn:order-1 md:order-2">
           <img

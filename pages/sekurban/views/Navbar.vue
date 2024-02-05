@@ -1,5 +1,5 @@
 <template>
-  <div id="navbar-sekurban" class="w-full fixed z-40 tn:py-2 lg:py-0 bg-top">
+  <div id="navbar-sekurban" class="w-full fixed z-40 tn:py-2 lg:py-2 bg-top">
     <div
       v-if="open"
       class="opacity-20 fixed inset-0 z-90 bg-black"
@@ -69,7 +69,7 @@
 </template>
 
 <script>
-import Logo from '~/components/atoms/Logo.vue';
+import Logo from "~/components/atoms/Logo.vue";
 export default {
   data() {
     return {
@@ -77,28 +77,28 @@ export default {
       navbarLink: [
         {
           id: 1,
-          label: 'Latar Belakang',
-          tag: 'product-background-sekurban',
+          label: "Latar Belakang",
+          tag: "product-background-sekurban",
         },
         {
           id: 2,
-          label: 'Detail Sapi',
-          tag: 'product-detail-sekurban',
+          label: "Detail Sapi",
+          tag: "product-detail-sekurban",
         },
         {
           id: 3,
-          label: 'Rincian Biaya',
-          tag: 'pricing-sekurban',
+          label: "Rincian Biaya",
+          tag: "pricing-sekurban",
         },
         {
           id: 4,
-          label: 'Flow Program',
-          tag: 'order-flow-sekurban',
+          label: "Flow Program",
+          tag: "order-flow-sekurban",
         },
         {
           id: 5,
-          label: 'Testimoni',
-          tag: 'testimony-sekurban',
+          label: "Testimoni",
+          tag: "testimony-sekurban",
         },
       ],
     };
@@ -113,22 +113,22 @@ export default {
   },
   methods: {
     handleScrollEffect() {
-      const myNav = document.getElementById('navbar-sekurban');
+      const myNav = document.getElementById("navbar-sekurban");
       if (
         document.body.scrollTop >= 50 ||
         document.documentElement.scrollTop >= 50
       ) {
-        myNav.classList.add('bg-below');
-        myNav.classList.remove('bg-top');
+        myNav.classList.add("bg-below");
+        myNav.classList.remove("bg-top");
       } else {
-        myNav.classList.add('bg-top');
-        myNav.classList.remove('bg-below');
+        myNav.classList.add("bg-top");
+        myNav.classList.remove("bg-below");
       }
     },
     scrollToTop() {
       window.scrollTo({
         top: 0,
-        behavior: 'smooth',
+        behavior: "smooth",
       });
       this.open = false;
     },
@@ -143,7 +143,7 @@ export default {
 
       window.scrollTo({
         top: offsetPosition,
-        behavior: 'smooth',
+        behavior: "smooth",
       });
     },
   },
