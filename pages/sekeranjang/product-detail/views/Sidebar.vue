@@ -141,8 +141,8 @@ export default {
   },
   computed: {
     linkProduct() {
-      const domain = window.location.origin;
-      return `${domain}/sekeranjang/product-detail?product_id=${this.product.uid}`;
+      // const domain = window.location.origin;
+      // return `${domain}/sekeranjang/product-detail?product_id=${this.product.uid}`;
     },
     isAvailable() {
       let available;

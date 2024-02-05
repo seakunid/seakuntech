@@ -507,10 +507,10 @@
       </div>
     </div>
 
-    <ModalBlackListWarning
+    <!-- <ModalBlackListWarning
       :show-modal="isShowModalBlackList"
       @onClose="closeModalBlackList"
-    />
+    /> -->
   </div>
 </template>
 
@@ -536,7 +536,7 @@ export default {
     Button,
     GroupCardShimmer,
     Chevron,
-    ModalBlackListWarning,
+    // ModalBlackListWarning,
     PackageCard,
   },
   data() {
@@ -545,8 +545,8 @@ export default {
       providerSlug: "",
       providerUid: "",
       priceScheme: {},
-      providerList,
-      seglowupPriceList,
+      // providerList,
+      // seglowupPriceList,
       isShowLessCategory: true,
       paramProfiderDetail: {
         uid: "",
@@ -762,22 +762,22 @@ export default {
       }
       this.isLoading = false;
     },
-    async getProviderGroup() {
-      this.isLoadingGroup = true;
-      const { MasterService, paramProviderGroup } = this;
-      try {
-        const fetchGroup = await MasterService.getAccountGroups(
-          paramProviderGroup
-        );
-        if (fetchGroup.data) {
-          const { data } = fetchGroup.data;
-          this.providerGroups = data ? data : [];
-        }
-      } catch (error) {
-        console.log(error);
-      }
-      this.isLoadingGroup = false;
-    },
+    // async getProviderGroup() {
+    //   this.isLoadingGroup = true;
+    //   const { MasterService, paramProviderGroup } = this;
+    //   try {
+    //     const fetchGroup = await MasterService.getAccountGroups(
+    //       paramProviderGroup
+    //     );
+    //     if (fetchGroup.data) {
+    //       const { data } = fetchGroup.data;
+    //       this.providerGroups = data ? data : [];
+    //     }
+    //   } catch (error) {
+    //     console.log(error);
+    //   }
+    //   this.isLoadingGroup = false;
+    // },
   },
 };
 </script>

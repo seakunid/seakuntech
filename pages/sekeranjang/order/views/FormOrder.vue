@@ -143,10 +143,10 @@
       @click="onClickOrder"
     />
 
-    <ModalBlackListWarning
+    <!-- <ModalBlackListWarning
       :show-modal="isShowModalBlackList"
       @onClose="closeModalBlackList"
-    />
+    /> -->
 
     <ModalOrderTimeout
       :show-modal="isShowModalTimeout"
@@ -166,7 +166,7 @@ import ProductOrderCard from "./ProductOrderCard.vue";
 import PromoCard from "./PromoCard.vue";
 import { internationalPhoneNumbers } from "~/constants/code-phone.js";
 import InputForm from "~/components/atoms/Input.vue";
-import ModalBlackListWarning from "~/components/mollecules/ModalBlackListWarning.vue";
+// import ModalBlackListWarning from "~/components/mollecules/ModalBlackListWarning.vue";
 import ModalOrderTimeout from "./ModalOrderTimeout.vue";
 
 export default {
@@ -179,7 +179,7 @@ export default {
     CheckedBox,
     UncheckBox,
     PromoCard,
-    ModalBlackListWarning,
+    // ModalBlackListWarning,
     ModalOrderTimeout,
   },
   data() {

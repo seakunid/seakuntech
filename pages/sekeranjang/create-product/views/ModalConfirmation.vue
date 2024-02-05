@@ -1,5 +1,6 @@
 <template>
-  <Modal :is-show="showModal" @onClose="$emit('onClose')" size="xl:w-1/3">
+  <div></div>
+  <!-- <Modal :is-show="showModal" @onClose="$emit('onClose')" size="xl:w-1/3">
     <h1 class="tn:text-[28px] md:text-[32px] font-bold text-center">
       Konfirmasi Pengajuanmu
     </h1>
@@ -24,15 +25,15 @@
         @click="$emit('clickSubmit')"
       />
     </div>
-  </Modal>
+  </Modal> -->
 </template>
 
 <script>
-import Modal from '~/components/atoms/Modal.vue';
-import Button from '~/components/atoms/Button.vue';
+// import Modal from '~/components/atoms/Modal.vue';
+import Button from "~/components/atoms/Button.vue";
 export default {
   components: {
-    Modal,
+    // Modal,
     Button,
   },
   props: {

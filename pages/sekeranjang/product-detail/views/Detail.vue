@@ -250,7 +250,7 @@
     </div>
 
     <div v-if="!isAvailable" class="tn:mt-4 lg:mt-6">
-      <WarningInfo class="w-full" :text="expiredWarning" />
+      <!-- <WarningInfo class="w-full" :text="expiredWarning" /> -->
     </div>
 
     <div
@@ -579,11 +579,11 @@
 </template>
 
 <script>
-import WarningInfo from "~/components/mollecules/WarningInfo.vue";
+// import WarningInfo from "~/components/mollecules/WarningInfo.vue";
 
 export default {
   components: {
-    WarningInfo,
+    // WarningInfo,
   },
   props: {
     product: {
@@ -625,13 +625,13 @@ export default {
     };
   },
   computed: {
-    linkProduct() {
-      const domain = window.location.origin;
-      return `${domain}/sekeranjang/product-detail?product_id=${this.product.uid}`;
-    },
+    // linkProduct() {
+    //   const domain = window.location.origin;
+    //   return `${domain}/sekeranjang/product-detail?product_id=${this.product.uid}`;
+    // },
     description() {
-      const desc = this.product.description.split("\n");
-      return desc;
+      // const desc = this.product.description.split("\n");
+      return null;
     },
     isAvailable() {
       let available;

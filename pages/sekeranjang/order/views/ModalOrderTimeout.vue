@@ -1,5 +1,6 @@
 <template>
-  <Modal :is-show="showModal" @onClose="onClose" size="xl:w-1/3">
+  <div></div>
+  <!-- <Modal :is-show="showModal" @onClose="onClose" size="xl:w-1/3">
     <template v-slot:header>
       <div class="font-bold text-lg text-red-500">Oops Terjadi Kesalahan!</div>
     </template>
@@ -26,16 +27,16 @@
         class="w-full tn:mt-4 py-3"
       />
     </a>
-  </Modal>
+  </Modal> -->
 </template>
 
 <script>
-import Modal from '~/components/atoms/Modal.vue';
-import Button from '~/components/atoms/Button.vue';
-import WarningInfo from '~/components/mollecules/WarningInfo.vue';
+// import Modal from "~/components/atoms/Modal.vue";
+// import Button from "~/components/atoms/Button.vue";
+// import WarningInfo from "~/components/mollecules/WarningInfo.vue";
 export default {
   components: {
-    Modal,
+    // Modal,
     Button,
     WarningInfo,
   },
@@ -56,7 +57,7 @@ export default {
   },
   methods: {
     onClose() {
-      this.$emit('onClose');
+      this.$emit("onClose");
     },
   },
 };

@@ -16,24 +16,18 @@
     <div class="tn:mt-6">
       <FormBanner />
     </div>
-
-    <div class="tn:mt-6">
-      <FormMain />
-    </div>
   </div>
 </template>
 
 <script>
-import FormBanner from './FormBanner';
-import FormMain from './FormMain.vue';
+import FormBanner from "./FormBanner";
 export default {
   components: {
     FormBanner,
-    FormMain,
   },
   methods: {
     backToHome() {
-      this.$router.push('/sekeranjang');
+      this.$router.push("/sekeranjang");
     },
   },
 };

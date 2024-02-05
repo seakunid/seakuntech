@@ -14,7 +14,7 @@
         class="text-white rounded-full px-2 text-[10px] lg:text-[12px]"
         :class="`${isAvailable ? 'bg-primary' : 'bg-red-500'}`"
       >
-        {{ isAvailable ? 'Available' : 'Full' }}
+        {{ isAvailable ? "Available" : "Full" }}
       </div>
     </div>
 
@@ -33,8 +33,8 @@
             :class="{ 'font-medium text-primary': member.customerName == '-' }"
           >
             {{
-              member.customerName == '-'
-                ? 'Slot tersedia'
+              member.customerName == "-"
+                ? "Slot tersedia"
                 : `${member.customerName}`
             }}
           </p>
@@ -53,14 +53,14 @@ export default {
     },
     provider: {
       type: String,
-      default: '',
+      default: "",
     },
   },
   computed: {
     isAvailable() {
-      return this.group.accountGroup.some((member) => {
-        return member.customerName == '-';
-      });
+      // return this.group.accountGroup.some((member) => {
+      //   return member.customerName == '-';
+      // });
     },
   },
 };

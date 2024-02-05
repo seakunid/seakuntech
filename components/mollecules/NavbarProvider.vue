@@ -133,9 +133,9 @@ export default {
     }
   },
   methods: {
-    ...mapActions({
-      setUserAvatar: "setUserAvatar",
-    }),
+    // ...mapActions({
+    //   setUserAvatar: "setUserAvatar",
+    // }),
   },
 };
 </script>
