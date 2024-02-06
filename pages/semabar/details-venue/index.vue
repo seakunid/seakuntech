@@ -355,6 +355,9 @@ export default {
     };
   },
   mounted() {
+    console.log("this slug =", this.slug);
+    console.log("this current venue = ", this.currentVenue);
+
     this.filterVenuFromSLug();
   },
   methods: {
