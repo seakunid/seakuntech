@@ -114,13 +114,19 @@
       </section>
       <section>
         <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-3 md:gap-4 lg:gap-5">
-          <!-- <div
+          <div
             v-for="(data, id) in dataVenue.list"
             :key="id"
-            @click="goToDetailsVenue(data)"
-          >
-        </div> -->
-        <CardService v-for="(data, id) in dataVenue.list" :key="id" :cardData="data" @click="goToDetailsVenue(data)" />
+            >
+            <template v-if="data.isAvailable">
+              <NuxtLink :to="`/semabar/details-venue?detailVenue=${data.slug}`">
+                <CardService :cardData="data" />
+              </NuxtLink>
+            </template>
+            <template v-else>
+              <CardService :cardData="data" />
+            </template>
+          </div>
         </div>
       </section>
       <div

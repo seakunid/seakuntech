@@ -23,11 +23,12 @@
             Temukan teman bermain untuk aktivitas olahraga dan game favoritmu
             dengan mudah dan aman melalui Seakun Main Bareng
           </p>
-          <Button
-            label="Lihat Layanan"
-            class="text-sm md:text-[18px] lg:text-[24px] font-bold mt-6 lg:mt-8 bg-[#14372E]/90 text-white rounded-lg w-full md:w-[240px] h-[42px] md:h-[50px] lg:h-[58px]"
-            @click="onClickOrder"
-          />
+          <NuxtLink to="/semabar#service-information">
+            <Button
+              label="Lihat Layanan"
+              class="text-sm md:text-[18px] lg:text-[24px] font-bold mt-6 lg:mt-8 bg-[#14372E]/90 text-white rounded-lg w-full md:w-[240px] h-[42px] md:h-[50px] lg:h-[58px]"
+            />
+          </NuxtLink>
         </div>
         <div class="tn:px-[27px] md:px-0 md:pr-[42px] tn:order-1 md:order-2">
           <img
