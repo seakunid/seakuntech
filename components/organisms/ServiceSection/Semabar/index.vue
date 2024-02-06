@@ -359,6 +359,7 @@ export default {
   // },
   methods: {
     goToDetailsVenue(slug) {
+      console.log("heeee");
       window.location.href = `semabar/details-venue?detailVenue=${slug}`;
       // this.$router.push({
       //   path: "/semabar/details-venue",
