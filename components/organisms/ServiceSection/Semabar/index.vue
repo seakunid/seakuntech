@@ -139,7 +139,6 @@
 </template>
 
 <script>
-const router = useRouter();
 import CardService from "./views/CardService.vue";
 import Chevron from "~/components/atoms/Chevron.vue";
 import ButtonChevron from "~/components/atoms/ButtonChevron.vue";
@@ -358,10 +357,9 @@ export default {
   // beforeDestroy() {
   //   window.removeEventListener("resize", this.updateFilteredListByResize);
   // },
-
   methods: {
     goToDetailsVenue(slug) {
-      router.push({
+      this.$router.push({
         path: "/semabar/details-venue",
         query: { detailVenue: slug },
       });
