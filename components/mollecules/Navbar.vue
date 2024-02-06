@@ -93,16 +93,16 @@
 
           <!-- login button -->
           <div v-if="!isLoggedin">
-            <nuxt-link
+            <NuxtLink
               :class="{ flex: open, hidden: !open }"
               to="/login"
               class="h-[42px] justify-center items-center rounded-[8px] text-white font-bold text-sm lg:text-base bg-primary w-full mt-3"
-              >Login</nuxt-link
+              >Login</NuxtLink
             >
-            <nuxt-link
+            <NuxtLink
               to="/login"
               class="w-[112px] h-[42px] hidden lg:flex justify-center items-center rounded-[8px] text-white font-bold text-sm lg:text-base bg-primary lg:ml-10"
-              >Login</nuxt-link
+              >Login</NuxtLink
             >
           </div>
           <!-- login button -->

@@ -1,6 +1,6 @@
 <template>
   <div class="bg-white p-3 rounded-[6px] w-full">
-    <nuxt-link to="/">
+    <NuxtLink to="/">
       <header
         class="bg-cover w-full h-[106px]"
         :style="`background-image: url(/images/seglowup/background/series-${id}.webp); background-size: 100%;`"
@@ -64,7 +64,7 @@
           </div>
         </div>
       </section>
-    </nuxt-link>
+    </NuxtLink>
   </div>
 </template>
 

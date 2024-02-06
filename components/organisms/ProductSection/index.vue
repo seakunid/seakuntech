@@ -12,9 +12,9 @@
           class="w-full h-full grid xl:grid-cols-6 lg:grid-cols-5 sm:grid-cols-4 tn:grid-cols-3 tn:gap-3 md:gap-4 lg:gap-8 px-0 justify-center place-items-stretch items-stretch"
         >
           <div class="" v-for="(product, id) in dataProductOnDemand" :key="id">
-            <nuxt-link :to="product.slug">
+            <NuxtLink :to="product.slug">
               <ProductCard :product="product" class="md:w-full md:h-full" />
-            </nuxt-link>
+            </NuxtLink>
           </div>
           <!-- <div class="">
             <ProposeCard

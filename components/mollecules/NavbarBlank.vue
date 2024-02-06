@@ -3,28 +3,28 @@
     <div
       class="!container static z-0 w-full text-gray-700 md:px-10 lg:flex lg:justify-between"
     >
-      <nuxt-link to="/">
+      <NuxtLink to="/">
         <img
           class="h-[30px]"
           src="/images/navbar/brand_seakun.svg"
           alt="brand seakun"
         />
-      </nuxt-link>
+      </NuxtLink>
     </div>
   </div>
 </template>
 
 <script>
-import Logo from '~/components/atoms/Logo.vue';
+import Logo from "~/components/atoms/Logo.vue";
 export default {
-  name: 'navbar-blank',
+  name: "navbar-blank",
   data() {
     return {};
   },
   props: {
     className: {
       typeof: String,
-      default: 'bg-third tn:shadow',
+      default: "bg-third tn:shadow",
     },
   },
   components: {

@@ -7,7 +7,7 @@
     ></div>
     <div class="static z-0 w-full text-gray-700">
       <div class="px-4 md:container lg:flex lg:justify-between lg:items-center">
-        <nuxt-link to="/">
+        <NuxtLink to="/">
           <div @click="scrollToTop">
             <img
               class="tn:h-[40px]"
@@ -15,7 +15,7 @@
               alt="brand seakun"
             />
           </div>
-        </nuxt-link>
+        </NuxtLink>
         <div
           class="absolute tn:top-1 tn:right-1 tn:py-4 tn:px-4 md:px-4 lg:top-0 lg:right-0 lg:relative z-100 flex flex-col tn:w-3/5 md:w-1/2 lg:w-4/5 rounded-xl lg:p-0 lg:justify-end lg:flex-row lg:items-center"
           :class="{ shadow: open, 'bg-white': open }"

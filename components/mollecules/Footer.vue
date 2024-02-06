@@ -46,21 +46,19 @@
         </h1>
         <ul class="tn:text-sm md:text-base my-2 space-y-4 xl:space-y-4">
           <li @click="scrollTo('about-us')">
-            <nuxt-link class="hover:no-underline" to="/"
-              >Tentang Kami</nuxt-link
-            >
+            <NuxtLink class="hover:no-underline" to="/">Tentang Kami</NuxtLink>
           </li>
           <li @click="scrollTo('orderFlow')">
-            <nuxt-link class="hover:no-underline" to="/">Cara Pesan</nuxt-link>
+            <NuxtLink class="hover:no-underline" to="/">Cara Pesan</NuxtLink>
           </li>
           <li>
-            <nuxt-link class="hover:no-underline" to="/"
-              >Syarat dan Ketentuan</nuxt-link
+            <NuxtLink class="hover:no-underline" to="/"
+              >Syarat dan Ketentuan</NuxtLink
             >
           </li>
           <li>
-            <nuxt-link class="hover:no-underline" to="/"
-              >Kebijakan Privasi</nuxt-link
+            <NuxtLink class="hover:no-underline" to="/"
+              >Kebijakan Privasi</NuxtLink
             >
           </li>
           <li>
@@ -72,12 +70,12 @@
             >
           </li>
           <li>
-            <nuxt-link class="hover:no-underline" to="/"
+            <NuxtLink class="hover:no-underline" to="/"
               >Karir
               <span v-if="isHiring" class="hiring text-primary font-mono">
                 ..we're hiring</span
               >
-            </nuxt-link>
+            </NuxtLink>
           </li>
         </ul>
       </div>
@@ -87,25 +85,25 @@
         </h1>
         <ul class="tn:text-sm md:text-base my-2 space-y-4 xl:space-y-4">
           <li @click="scrollTo('product-ondemand')">
-            <nuxt-link class="hover:no-underline" to="/"
-              >Produk Non Digital</nuxt-link
+            <NuxtLink class="hover:no-underline" to="/"
+              >Produk Non Digital</NuxtLink
             >
           </li>
           <li>
-            <nuxt-link class="hover:no-underline" to="/"
-              >Program Patungan</nuxt-link
+            <NuxtLink class="hover:no-underline" to="/"
+              >Program Patungan</NuxtLink
             >
           </li>
           <li>
-            <nuxt-link class="hover:no-underline" to="/"
-              >Program Sekeranjang</nuxt-link
+            <NuxtLink class="hover:no-underline" to="/"
+              >Program Sekeranjang</NuxtLink
             >
           </li>
           <li class="relative max-w-max">
-            <nuxt-link class="hover:no-underline" to="/">Sequrban</nuxt-link>
+            <NuxtLink class="hover:no-underline" to="/">Sequrban</NuxtLink>
           </li>
           <li class="relative max-w-max">
-            <nuxt-link class="hover:no-underline" to="/">SeGlowUp</nuxt-link>
+            <NuxtLink class="hover:no-underline" to="/">SeGlowUp</NuxtLink>
             <img
               class="absolute top-0 -right-1 w-[9px]"
               :class="`${showSpark1 ? 'opacity-100' : 'opacity-20'}`"

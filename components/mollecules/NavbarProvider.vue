@@ -8,13 +8,13 @@
       <div
         class="flex justify-between items-center px-[20px] md:px-0 md:container"
       >
-        <nuxt-link to="/" class="">
+        <NuxtLink to="/" class="">
           <img
             class="h-[40px]"
             src="/images/navbar/brand_seakun.svg"
             alt="brand seakun"
           />
-        </nuxt-link>
+        </NuxtLink>
         <div
           role="button"
           class="md:hidden"
@@ -36,26 +36,26 @@
       </div>
       <div>
         <div v-if="!isLoggedin" class="hidden md:flex items-center gap-[16px]">
-          <nuxt-link
+          <NuxtLink
             class="w-full md:w-[120px] h-[36px] md:h-[46px] font-bold flex justify-center items-center border border-primary bg-white text-primary rounded-[4px] md:rounded-[8px]"
             to="/login"
           >
             <p>Masuk</p>
-          </nuxt-link>
-          <nuxt-link
+          </NuxtLink>
+          <NuxtLink
             class="w-full md:w-[120px] h-[36px] md:h-[46px] font-bold flex justify-center items-center border border-primary bg-primary text-white rounded-[4px] md:rounded-[8px]"
             to="/register"
           >
             <p>Daftar</p>
-          </nuxt-link>
+          </NuxtLink>
         </div>
-        <nuxt-link v-else to="/">
+        <NuxtLink v-else to="/">
           <img
             :src="`/images/profile-page/avatar/${avatar}.svg`"
             alt="profile"
             class="rounded-full w-[42px] h-[42px] hidden md:block border border-[#D8EDEE]"
           />
-        </nuxt-link>
+        </NuxtLink>
       </div>
     </div>
 
@@ -69,21 +69,21 @@
         v-if="!isLoggedin"
         class="grid grid-cols-2 items-center gap-3 mt-5 mx-auto w-[321px]"
       >
-        <nuxt-link
+        <NuxtLink
           class="w-full h-[36px] font-bold flex justify-center items-center border border-primary bg-white text-primary rounded-[4px]"
           to="/login"
         >
           <p>Masuk</p>
-        </nuxt-link>
-        <nuxt-link
+        </NuxtLink>
+        <NuxtLink
           class="w-full h-[36px] font-bold flex justify-center items-center border border-primary bg-primary text-white rounded-[4px]"
           to="/register"
         >
           <p>Daftar</p>
-        </nuxt-link>
+        </NuxtLink>
       </div>
       <div v-else class="py-3 border-b">
-        <nuxt-link class="" to="/">
+        <NuxtLink class="" to="/">
           <div class="mx-auto w-[321px] md:w-full flex items-center gap-3">
             <img
               :src="`/images/profile-page/avatar/${avatar}.svg`"
@@ -92,14 +92,14 @@
             />
             <p>Profil</p>
           </div>
-        </nuxt-link>
+        </NuxtLink>
       </div>
-      <nuxt-link to="/">
+      <NuxtLink to="/">
         <div class="my-4 flex items-center gap-1 mx-auto w-[321px] md:w-full">
           <img src="/images/icons/atoms/home.svg" alt="kembali" />
           <p>Kembali ke Beranda</p>
         </div>
-      </nuxt-link>
+      </NuxtLink>
     </div>
   </div>
 </template>
