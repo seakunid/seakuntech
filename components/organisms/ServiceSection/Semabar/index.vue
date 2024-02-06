@@ -114,10 +114,9 @@
       </section>
       <section
         class="grid md:grid-cols-2 lg:grid-cols-4 gap-3 md:gap-4 lg:gap-5"
-        v-if="filteredList.length > 0"
       >
         <CardService
-          v-for="(data, id) in filteredList"
+          v-for="(data, id) in dataVenue.list"
           :key="id"
           :cardData="data"
           @click-card="
@@ -356,34 +355,34 @@ export default {
       windowWidth: 0,
     };
   },
-  created() {
-    if (process.client) {
-      this.displayAllListByScreenSize();
-      this.windowWidth = window.innerWidth;
-      window.addEventListener("resize", this.updateFilteredListByResize);
-    }
-  },
-  beforeDestroy() {
-    window.removeEventListener("resize", this.updateFilteredListByResize);
-  },
+  // created() {
+  //   if (process.client) {
+  //     this.displayAllListByScreenSize();
+  //     this.windowWidth = window.innerWidth;
+  //     window.addEventListener("resize", this.updateFilteredListByResize);
+  //   }
+  // },
+  // beforeDestroy() {
+  //   window.removeEventListener("resize", this.updateFilteredListByResize);
+  // },
 
   methods: {
-    onFilterCity(param) {
-      this.selectedCity = param.name;
-      this.filterCity();
-    },
-    filterCity() {
-      if (this.selectedCity == "Semua") {
-        this.allreadyDisplayData = false;
-        this.displayAllListByScreenSize();
-      } else {
-        this.filteredList = this.dataVenue.list.filter(
-          (data) => data.city == this.selectedCity
-        );
-        this.allreadyDisplayData = true;
-      }
-      this.isShowModalCity = false;
-    },
+    // onFilterCity(param) {
+    //   this.selectedCity = param.name;
+    //   this.filterCity();
+    // },
+    // filterCity() {
+    //   if (this.selectedCity == "Semua") {
+    //     this.allreadyDisplayData = false;
+    //     this.displayAllListByScreenSize();
+    //   } else {
+    //     this.filteredList = this.dataVenue.list.filter(
+    //       (data) => data.city == this.selectedCity
+    //     );
+    //     this.allreadyDisplayData = true;
+    //   }
+    //   this.isShowModalCity = false;
+    // },
     displayAllListByScreenSize() {
       const screenWidth = window.innerWidth;
 
