@@ -114,13 +114,13 @@
       </section>
       <section>
         <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-3 md:gap-4 lg:gap-5">
-          <div
+          <!-- <div
             v-for="(data, id) in dataVenue.list"
             :key="id"
             @click="goToDetailsVenue(data)"
           >
-            <CardService :cardData="data" />
-          </div>
+        </div> -->
+        <CardService v-for="(data, id) in dataVenue.list" :key="id" :cardData="data" @click="goToDetailsVenue(data)" />
         </div>
       </section>
       <div

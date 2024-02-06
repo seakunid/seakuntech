@@ -17,6 +17,7 @@
     "nuxt": "^3.9.0",
     "postcss": "^8.4.33",
     "push-dir": "^0.4.1",
+    "sass": "^1.70.0",
     "tailwindcss": "^3.4.1",
     "vue": "^3.4.5",
     "vue-router": "^4.2.5"
