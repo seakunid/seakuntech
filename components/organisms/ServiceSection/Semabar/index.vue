@@ -359,10 +359,11 @@ export default {
   // },
   methods: {
     goToDetailsVenue(slug) {
-      this.$router.push({
-        path: "/semabar/details-venue",
-        query: { detailVenue: slug },
-      });
+      window.location.href = `semabar/details-venue?detailVenue=${slug}`;
+      // this.$router.push({
+      //   path: "/semabar/details-venue",
+      //   query: { detailVenue: slug },
+      // });
     },
     // onFilterCity(param) {
     //   this.selectedCity = param.name;
