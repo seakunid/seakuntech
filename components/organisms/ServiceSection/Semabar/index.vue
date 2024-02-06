@@ -112,15 +112,16 @@
           nikmati biaya admin lebih murah
         </p>
       </section>
-      <section
-        class="grid md:grid-cols-2 lg:grid-cols-4 gap-3 md:gap-4 lg:gap-5"
-      >
-        <CardService
-          v-for="(data, id) in dataVenue.list"
-          :key="id"
-          :cardData="data"
-          @click-card="data.isAvailable ? goToDetailsVenue(data.slug) : null"
-        />
+      <section>
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-3 md:gap-4 lg:gap-5">
+          <div
+            v-for="(data, id) in dataVenue.list"
+            :key="id"
+            @click="goToDetailsVenue(data)"
+          >
+            <CardService :cardData="data" />
+          </div>
+        </div>
       </section>
       <div
         class="flex gap-2 items-center pt-6 mx-auto w-max cursor-pointer"
@@ -358,9 +359,10 @@ export default {
   //   window.removeEventListener("resize", this.updateFilteredListByResize);
   // },
   methods: {
-    goToDetailsVenue(slug) {
-      console.log("heeee");
-      window.location.href = `semabar/details-venue?detailVenue=${slug}`;
+    goToDetailsVenue(data) {
+      if (data.isAvailable) {
+        window.location.href = `semabar/details-venue?detailVenue=${data.slug}`;
+      }
       // this.$router.push({
       //   path: "/semabar/details-venue",
       //   query: { detailVenue: slug },
