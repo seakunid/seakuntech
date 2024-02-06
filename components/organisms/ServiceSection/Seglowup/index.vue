@@ -27,7 +27,7 @@
         <section
           v-for="(service, id) in menus"
           :key="id"
-          class="transition-all ease-in duration-200 p-2 lg:p-4 rounded-t-xl min-w-[120px] lg:min-w-[190px]"
+          class="p-2 lg:p-4 rounded-t-xl min-w-[120px] lg:min-w-[190px]"
           :class="[
             service.name == activeMenu ? 'bg-[#DEF3EF] cursor-pointer' : '',
           ]"

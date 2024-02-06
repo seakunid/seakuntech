@@ -18,7 +18,7 @@
           {{ menu.name }}
         </p>
         <div
-          class="absolute bottom-0 rounded-[20px] bg-[#00BA88] hidden transition-all ease-in-out duration-200"
+          class="absolute bottom-0 rounded-[20px] bg-[#00BA88] hidden duration-200"
           :class="{
             '!block left-0 underline-animation ': activeTab == menu.content,
           }"

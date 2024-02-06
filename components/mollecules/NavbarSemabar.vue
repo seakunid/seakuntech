@@ -1,5 +1,5 @@
 <template>
-  <div id="navbar" class="w-full fixed z-40 tn:py-3 lg:py-0 bg-none">
+  <div id="navbar" class="w-full fixed z-40 py-3 bg-white shadow">
     <div
       v-if="open"
       class="opacity-20 fixed inset-0 z-90 bg-black"
@@ -108,25 +108,8 @@ export default {
   components: {
     Logo,
   },
-  mounted() {
-    window.onscroll = () => {
-      this.handleScrollEffect();
-    };
-  },
+  mounted() {},
   methods: {
-    handleScrollEffect() {
-      const myNav = document.getElementById("navbar");
-      if (
-        document.body.scrollTop >= 50 ||
-        document.documentElement.scrollTop >= 50
-      ) {
-        myNav.classList.add("bg-nav");
-        myNav.classList.remove("bg-none");
-      } else {
-        myNav.classList.add("bg-none");
-        myNav.classList.remove("bg-nav");
-      }
-    },
     scrollToTop() {
       window.scrollTo({
         top: 0,

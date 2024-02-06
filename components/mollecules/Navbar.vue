@@ -70,19 +70,19 @@
               </a>
               <template v-if="navbar.tag === 'sekurban'">
                 <img
-                  class="transition-opacity ease-in-out delay-50 duration-500 absolute -top-1 -right-1 w-[9px]"
+                  class="absolute -top-1 -right-1 w-[9px]"
                   :class="`${showSpark1 ? 'opacity-100' : 'opacity-20'}`"
                   src="/images/icons/atoms/spark.svg"
                   alt="spark"
                 />
                 <img
-                  class="transition-opacity ease-in-out delay-50 duration-500 absolute bottom-1 -right-2 w-[8px]"
+                  class="absolute bottom-1 -right-2 w-[8px]"
                   :class="`${showSpark2 ? '!opacity-100' : '!opacity-20'}`"
                   src="/images/icons/atoms/spark.svg"
                   alt="spark"
                 />
                 <img
-                  class="transition-opacity ease-in-out delay-50 duration-500 absolute top-0 -right-4 w-[12px]"
+                  class="absolute top-0 -right-4 w-[12px]"
                   :class="`${showSpark3 ? '!opacity-100' : '!opacity-20'}`"
                   src="/images/icons/atoms/spark.svg"
                   alt="spark"

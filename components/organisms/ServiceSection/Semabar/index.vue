@@ -23,13 +23,13 @@
         class="hidden md:block"
       />
       <div
-        class="flex items-center gap-[9px] lg:gap-8 overflow-x-scroll service-parent scroll-smooth"
+        class="flex items-center gap-[9px] lg:gap-8 overflow-x-scroll service-parent"
         id="service-wrapper"
       >
         <section
           v-for="(service, id) in menus"
           :key="id"
-          class="transition-all ease-in duration-200 p-2 lg:p-4 rounded-t-xl lg:min-w-[190px] lg:max-w-[190px]"
+          class="p-2 lg:p-4 rounded-t-xl lg:min-w-[190px] lg:max-w-[190px]"
           @click="handleClickMenu(service)"
           :class="`{
             ${activeMenu === service.name ? 'bg-[#DEFDF5] ' : null}
@@ -82,7 +82,7 @@
             @click="isShowModalCity = !isShowModalCity"
           />
           <div
-            class="bg-white px-5 z-20 rounded-[5px] space-y-2 absolute top-[100%] mt-3 right-0 overflow-hidden transition-all ease-in-out"
+            class="bg-white px-5 z-20 rounded-[5px] space-y-2 absolute top-[100%] mt-3 right-0 overflow-hidden"
             :class="isShowModalCity ? 'h-max py-2' : 'h-0'"
           >
             <Dropdown

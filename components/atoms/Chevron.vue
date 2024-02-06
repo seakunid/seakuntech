@@ -3,7 +3,7 @@
     <section
       :class="{ '-rotate-180': isShow }"
       @click="(isShow = !isShow), $emit('click')"
-      class="w-max transition-all ease-in-out duration-200"
+      class="w-max"
     >
       <svg
         width="14"
@@ -26,11 +26,11 @@ export default {
   props: {
     color: {
       typeof: String,
-      default: '#2D2D2D',
+      default: "#2D2D2D",
     },
     addClass: {
       typeof: String,
-      default: '',
+      default: "",
     },
     isShow: {
       typeof: Boolean,

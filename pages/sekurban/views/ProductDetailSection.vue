@@ -25,7 +25,7 @@
           v-for="(cow, id) in cowImages"
           :key="id"
           @click="activeSlider = id + 1"
-          class="rounded-full transition-all ease-in-out delay-50"
+          class="rounded-full"
           :class="`${
             activeSlider === id + 1
               ? 'w-[24px] h-[5px] bg-[#00BA88]'

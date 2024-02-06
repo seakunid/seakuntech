@@ -1,5 +1,5 @@
 <template>
-  <div id="navbar-seglowup" class="w-full fixed z-40 tn:py-3 lg:py-0 bg-none">
+  <div id="navbar-seglowup" class="w-full fixed z-40 py-3 bg-white shadow">
     <div
       v-if="open"
       class="opacity-20 fixed inset-0 z-90 bg-black"
@@ -68,7 +68,7 @@
 </template>
 
 <script>
-import Logo from '~/components/atoms/Logo.vue';
+import Logo from "~/components/atoms/Logo.vue";
 export default {
   data() {
     return {
@@ -79,28 +79,28 @@ export default {
       navbarLink: [
         {
           id: 1,
-          label: 'Skema Harga',
-          tag: 'price-scheme-seglowup',
+          label: "Skema Harga",
+          tag: "price-scheme-seglowup",
         },
         {
           id: 2,
-          label: 'Flow Berlangganan',
-          tag: 'order-flow-seglowup',
+          label: "Flow Berlangganan",
+          tag: "order-flow-seglowup",
         },
         {
           id: 3,
-          label: 'Layanan',
-          tag: 'service-seglowup',
+          label: "Layanan",
+          tag: "service-seglowup",
         },
         {
           id: 4,
-          label: 'Testimoni',
-          tag: 'testimony-seglowup',
+          label: "Testimoni",
+          tag: "testimony-seglowup",
         },
         {
           id: 5,
-          label: 'FAQ',
-          tag: 'qna-seglowup',
+          label: "FAQ",
+          tag: "qna-seglowup",
         },
       ],
     };
@@ -108,29 +108,11 @@ export default {
   components: {
     Logo,
   },
-  mounted() {
-    window.onscroll = () => {
-      this.handleScrollEffect();
-    };
-  },
+  mounted() {},
   methods: {
-    handleScrollEffect() {
-      const myNav = document.getElementById('navbar-seglowup');
-      if (
-        document.body.scrollTop >= 50 ||
-        document.documentElement.scrollTop >= 50
-      ) {
-        myNav.classList.add('bg-nav');
-        myNav.classList.remove('bg-none');
-      } else {
-        myNav.classList.add('bg-none');
-        myNav.classList.remove('bg-nav');
-      }
-    },
     scrollToTop() {
       window.scrollTo({
         top: 0,
-        behavior: 'smooth',
       });
       this.open = false;
     },
@@ -145,7 +127,6 @@ export default {
 
       window.scrollTo({
         top: offsetPosition,
-        behavior: 'smooth',
       });
     },
   },

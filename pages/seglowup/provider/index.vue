@@ -107,7 +107,7 @@
           </div>
 
           <section
-            class="transition-all ease-in-out duration-200 overflow-hidden"
+            class="overflow-hidden"
             :class="`${
               !isLoading && selectedPackage && isShowPriceScheme
                 ? 'h-max pt-[12px] '
