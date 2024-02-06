@@ -360,6 +360,8 @@ export default {
   // },
   methods: {
     goToDetailsVenue(data) {
+    console.log("data");
+    console.log(data);
       if (data.isAvailable) {
         window.location.href = `semabar/details-venue?detailVenue=${data.slug}`;
       }
