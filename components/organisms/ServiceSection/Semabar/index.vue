@@ -119,14 +119,7 @@
           v-for="(data, id) in dataVenue.list"
           :key="id"
           :cardData="data"
-          @click-card="
-            data.isAvailable
-              ? $router.push({
-                  path: '/semabar/details-venue',
-                  query: { detailVenue: data.slug },
-                })
-              : null
-          "
+          @click-card="data.isAvailable ? goToDetailsVenue(data.slug) : null"
         />
       </section>
       <div
@@ -146,11 +139,11 @@
 </template>
 
 <script>
+const router = useRouter();
 import CardService from "./views/CardService.vue";
 import Chevron from "~/components/atoms/Chevron.vue";
 import ButtonChevron from "~/components/atoms/ButtonChevron.vue";
 import Dropdown from "./views/Dropdown.vue";
-const router = useRouter();
 export default {
   components: {
     CardService,
@@ -367,7 +360,12 @@ export default {
   // },
 
   methods: {
-    goToDetailsVenue() {},
+    goToDetailsVenue(slug) {
+      router.push({
+        path: "/semabar/details-venue",
+        query: { detailVenue: slug },
+      });
+    },
     // onFilterCity(param) {
     //   this.selectedCity = param.name;
     //   this.filterCity();
