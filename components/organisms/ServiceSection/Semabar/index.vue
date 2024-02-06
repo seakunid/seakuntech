@@ -114,7 +114,7 @@
       </section>
       <section
         class="grid md:grid-cols-2 lg:grid-cols-4 gap-3 md:gap-4 lg:gap-5"
-        v-show="filteredList.length > 0"
+        v-if="filteredList.length > 0"
       >
         <CardService
           v-for="(data, id) in filteredList"
