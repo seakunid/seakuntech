@@ -1,45 +1,44 @@
 <template>
-  <ClientOnly>
-    <div
-      class="mt-6 md:mt-[32px] lg:mt-[52px] pb-2 md:pb-3 lg:pb-5 container"
-      id="service-information"
+  <div
+    class="mt-6 md:mt-[32px] lg:mt-[52px] pb-2 md:pb-3 lg:pb-5 container"
+    id="service-information"
+  >
+    <div class="w-full text-center text-[#15382F] max-w-[928px] mx-auto">
+      <h1 class="text-dmsans font-bold text-base md:text-xl lg:text-[28px]">
+        Info Layanan
+      </h1>
+      <p class="text-sm md:text-base lg:text-xl pt-2">
+        Pilih permainan dan olahraga yang kamu sukai, dan temukan informasi
+        lengkap tentang layanan Semabar di bawah ini!
+      </p>
+    </div>
+    <section
+      class="flex items-center mt-6 mx-[23px] md:mx-[40px] lg:mx-[69px] justify-center gap-4"
     >
-      <div class="w-full text-center text-[#15382F] max-w-[928px] mx-auto">
-        <h1 class="text-dmsans font-bold text-base md:text-xl lg:text-[28px]">
-          Info Layanan
-        </h1>
-        <p class="text-sm md:text-base lg:text-xl pt-2">
-          Pilih permainan dan olahraga yang kamu sukai, dan temukan informasi
-          lengkap tentang layanan Semabar di bawah ini!
-        </p>
-      </div>
-      <section
-        class="flex items-center mt-6 mx-[23px] md:mx-[40px] lg:mx-[69px] justify-center gap-4"
+      <ButtonChevron
+        variant="bg-[#00BA881A]"
+        fillColor="#00BA88"
+        mode="left"
+        @click-chevron="scrollFill('left')"
+        class="hidden md:block"
+      />
+      <div
+        class="flex items-center gap-[9px] lg:gap-8 overflow-x-scroll service-parent scroll-smooth"
+        id="service-wrapper"
       >
-        <ButtonChevron
-          variant="bg-[#00BA881A]"
-          fillColor="#00BA88"
-          mode="left"
-          @click-chevron="scrollFill('left')"
-          class="hidden md:block"
-        />
-        <div
-          class="flex items-center gap-[9px] lg:gap-8 overflow-x-scroll service-parent scroll-smooth"
-          id="service-wrapper"
-        >
-          <section
-            v-for="(service, id) in menus"
-            :key="id"
-            class="transition-all ease-in duration-200 p-2 lg:p-4 rounded-t-xl lg:min-w-[190px] lg:max-w-[190px]"
-            @click="handleClickMenu(service)"
-            :class="`{
+        <section
+          v-for="(service, id) in menus"
+          :key="id"
+          class="transition-all ease-in duration-200 p-2 lg:p-4 rounded-t-xl lg:min-w-[190px] lg:max-w-[190px]"
+          @click="handleClickMenu(service)"
+          :class="`{
             ${activeMenu === service.name ? 'bg-[#DEFDF5] ' : null}
             ${service.isActive ? 'cursor-pointer' : 'cursor-not-allowed'}
           }`"
-          >
-            <div
-              class="bg-cover bg-center relative service-menu rounded-[6px] text-center"
-              :class="`{
+        >
+          <div
+            class="bg-cover bg-center relative service-menu rounded-[6px] text-center"
+            :class="`{
               ${
                 activeMenu === service.name
                   ? 'border-[3px] border-[#23D7A6] rounded-[10px]'
@@ -48,104 +47,103 @@
               ${!service.isActive ? 'opacity-30' : null}
               
             }`"
-              :style="`background-image: url(/images/semabar/illustration/service-menu/${service.background})`"
+            :style="`background-image: url(/images/semabar/illustration/service-menu/${service.background})`"
+          >
+            <h3
+              class="text-sm font-bold text-white min-w-[120px] py-[15px] relative z-40 whitespace-nowrap"
             >
-              <h3
-                class="text-sm font-bold text-white min-w-[120px] py-[15px] relative z-40 whitespace-nowrap"
-              >
-                {{ service.name }}
-              </h3>
-            </div>
-          </section>
+              {{ service.name }}
+            </h3>
+          </div>
+        </section>
+      </div>
+      <ButtonChevron
+        variant="bg-[#00BA881A]"
+        fillColor="#00BA88"
+        @click-chevron="scrollFill('right')"
+        class="hidden md:block"
+      />
+    </section>
+
+    <div class="p-3 md:p-5 lg:p-8 bg-[#DEFDF5] text-dmsans rounded-lg">
+      <header class="flex justify-between items-center text-main">
+        <p class="text-sm font-medium md:text-base lg:text-[20px] text-main">
+          Venue yang tersedia
+        </p>
+        <div class="flex items-center gap-1 cursor-pointer relative">
+          <p
+            class="text-xs md:text-sm lg:text-[18px] text-main font-medium"
+            @click="isShowModalCity = !isShowModalCity"
+          >
+            {{ selectedCity != "Semua" ? selectedCity : "Filter Kota" }}
+          </p>
+          <Chevron
+            :isShow="isShowModalCity"
+            @click="isShowModalCity = !isShowModalCity"
+          />
+          <div
+            class="bg-white px-5 z-20 rounded-[5px] space-y-2 absolute top-[100%] mt-3 right-0 overflow-hidden transition-all ease-in-out"
+            :class="isShowModalCity ? 'h-max py-2' : 'h-0'"
+          >
+            <Dropdown
+              :class-text="{
+                'text-green-seakun-secondary-dark': selectedCity == data.name,
+              }"
+              v-for="(data, id) in cities"
+              :key="id"
+              :data="data"
+              @clickMenuFilter="onFilterCity(data)"
+            />
+          </div>
         </div>
-        <ButtonChevron
-          variant="bg-[#00BA881A]"
-          fillColor="#00BA88"
-          @click-chevron="scrollFill('right')"
-          class="hidden md:block"
+      </header>
+      <section
+        class="rounded-[10px] border-[#00BA88] border-[1px] p-2 flex items-start gap-1 bg-[#EBFFF9] my-6"
+      >
+        <img
+          src="/images/icons/atoms/round-info-green.svg"
+          alt="info"
+          class="w-3 h-3 lg:w-5 lg:h-5"
+        />
+        <p
+          class="text-xs md:text-sm lg:text-base text-[#00BA88] font-semibold text-nunito"
+        >
+          Yuk, jadi member sekarang! Bayar sekaligus 4 match per-bulan dan
+          nikmati biaya admin lebih murah
+        </p>
+      </section>
+      <section
+        class="grid md:grid-cols-2 lg:grid-cols-4 gap-3 md:gap-4 lg:gap-5"
+        v-show="filteredList.length > 0"
+      >
+        <CardService
+          v-for="(data, id) in filteredList"
+          :key="id"
+          :cardData="data"
+          @click-card="
+            data.isAvailable
+              ? $router.push({
+                  path: '/semabar/details-venue',
+                  query: { detailVenue: data.slug },
+                })
+              : null
+          "
         />
       </section>
-
-      <div class="p-3 md:p-5 lg:p-8 bg-[#DEFDF5] text-dmsans rounded-lg">
-        <header class="flex justify-between items-center text-main">
-          <p class="text-sm font-medium md:text-base lg:text-[20px] text-main">
-            Venue yang tersedia
-          </p>
-          <div class="flex items-center gap-1 cursor-pointer relative">
-            <p
-              class="text-xs md:text-sm lg:text-[18px] text-main font-medium"
-              @click="isShowModalCity = !isShowModalCity"
-            >
-              {{ selectedCity != "Semua" ? selectedCity : "Filter Kota" }}
-            </p>
-            <Chevron
-              :isShow="isShowModalCity"
-              @click="isShowModalCity = !isShowModalCity"
-            />
-            <div
-              class="bg-white px-5 z-20 rounded-[5px] space-y-2 absolute top-[100%] mt-3 right-0 overflow-hidden transition-all ease-in-out"
-              :class="isShowModalCity ? 'h-max py-2' : 'h-0'"
-            >
-              <Dropdown
-                :class-text="{
-                  'text-green-seakun-secondary-dark': selectedCity == data.name,
-                }"
-                v-for="(data, id) in cities"
-                :key="id"
-                :data="data"
-                @clickMenuFilter="onFilterCity(data)"
-              />
-            </div>
-          </div>
-        </header>
-        <section
-          class="rounded-[10px] border-[#00BA88] border-[1px] p-2 flex items-start gap-1 bg-[#EBFFF9] my-6"
+      <div
+        class="flex gap-2 items-center pt-6 mx-auto w-max cursor-pointer"
+        @click="onShowMore"
+        v-if="!allreadyDisplayData"
+      >
+        <p
+          class="text-green-seakun-secondary-dark text-xs md:text-sm font-medium"
         >
-          <img
-            src="/images/icons/atoms/round-info-green.svg"
-            alt="info"
-            class="w-3 h-3 lg:w-5 lg:h-5"
-          />
-          <p
-            class="text-xs md:text-sm lg:text-base text-[#00BA88] font-semibold text-nunito"
-          >
-            Yuk, jadi member sekarang! Bayar sekaligus 4 match per-bulan dan
-            nikmati biaya admin lebih murah
-          </p>
-        </section>
-        <section
-          class="grid md:grid-cols-2 lg:grid-cols-4 gap-3 md:gap-4 lg:gap-5"
-          v-show="filteredList.length > 0"
-        >
-          <CardService
-            v-for="(data, id) in filteredList"
-            :key="id"
-            :cardData="data"
-            @click-card="
-              data.isAvailable
-                ? $router.push({
-                    path: '/semabar/details-venue',
-                    query: { detailVenue: data.slug },
-                  })
-                : null
-            "
-          />
-        </section>
-        <div
-          class="flex gap-2 items-center pt-6 mx-auto w-max cursor-pointer"
-          @click="onShowMore"
-          v-if="!allreadyDisplayData"
-        >
-          <p
-            class="text-green-seakun-secondary-dark text-xs md:text-sm font-medium"
-          >
-            Show more
-          </p>
-          <Chevron color="#00BA88" />
-        </div>
+          Show more
+        </p>
+        <Chevron color="#00BA88" />
       </div>
     </div>
-  </ClientOnly>
+  </div>
 </template>
 
 <script>
