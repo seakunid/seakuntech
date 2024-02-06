@@ -1,7 +1,7 @@
 <template>
   <div>
-    <HeaderDetailsVenue :details-venue="filterVenue" />
-    <TableDetails :details-venue="filterVenue" />
+    <HeaderDetailsVenue :details-venue="currentVenue" />
+    <TableDetails :details-venue="currentVenue" />
     <FooterSemabar />
   </div>
 </template>
@@ -85,13 +85,15 @@ export default {
     TableDetails,
     FooterSemabar,
   },
-  computed: {
-    filterVenue() {
-      return this.dataVenue.list.find((venue) => venue.slug == this.slug);
-    },
-  },
+  // computed: {
+  //   filterVenue() {
+  //     return this.dataVenue.list.find((venue) => venue.slug == this.slug);
+  //   },
+  // },
+
   data() {
     return {
+      currentVenue: null,
       slug: this.$route.query.detailVenue,
       dataVenue: {
         list: [
@@ -351,6 +353,16 @@ export default {
         ],
       },
     };
+  },
+  mounted() {
+    this.filterVenuFromSLug();
+  },
+  methods: {
+    filterVenuFromSLug() {
+      this.currentVenue = this.dataVenue.list.find(
+        (venue) => venue.slug == this.slug
+      );
+    },
   },
 };
 </script>
