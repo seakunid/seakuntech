@@ -150,7 +150,7 @@ import CardService from "./views/CardService.vue";
 import Chevron from "~/components/atoms/Chevron.vue";
 import ButtonChevron from "~/components/atoms/ButtonChevron.vue";
 import Dropdown from "./views/Dropdown.vue";
-
+const router = useRouter();
 export default {
   components: {
     CardService,
@@ -367,6 +367,7 @@ export default {
   // },
 
   methods: {
+    goToDetailsVenue() {},
     // onFilterCity(param) {
     //   this.selectedCity = param.name;
     //   this.filterCity();
