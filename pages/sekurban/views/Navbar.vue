@@ -1,5 +1,5 @@
 <template>
-  <div id="navbar-sekurban" class="w-full fixed z-40 tn:py-2 lg:py-2 bg-top">
+  <div id="navbar-sekurban" class="w-full fixed z-40 py-2 lg:py-3 bg-white">
     <div
       v-if="open"
       class="opacity-20 fixed inset-0 z-90 bg-black"
@@ -112,19 +112,19 @@ export default {
     };
   },
   methods: {
-    handleScrollEffect() {
-      const myNav = document.getElementById("navbar-sekurban");
-      if (
-        document.body.scrollTop >= 50 ||
-        document.documentElement.scrollTop >= 50
-      ) {
-        myNav.classList.add("bg-below");
-        myNav.classList.remove("bg-top");
-      } else {
-        myNav.classList.add("bg-top");
-        myNav.classList.remove("bg-below");
-      }
-    },
+    // handleScrollEffect() {
+    //   const myNav = document.getElementById("navbar-sekurban");
+    //   if (
+    //     document.body.scrollTop >= 50 ||
+    //     document.documentElement.scrollTop >= 50
+    //   ) {
+    //     myNav.classList.add("bg-below");
+    //     myNav.classList.remove("bg-top");
+    //   } else {
+    //     myNav.classList.add("bg-top");
+    //     myNav.classList.remove("bg-below");
+    //   }
+    // },
     scrollToTop() {
       window.scrollTo({
         top: 0,

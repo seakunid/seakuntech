@@ -57,7 +57,8 @@ export default {
             city: "Jakarta Selatan",
             address:
               "Jl. Logam No.7, RT.7/RW.8, Grogol Utara, Kebayoran Lama, Jakarta Selatan 12210",
-            maps: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.3494264236692!2d106.78892859999999!3d-6.2175673!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f7cc70ce5a39%3A0x2ad1d2e9cc5cd357!2sLA.PANG.AN%2045%20Permata%20Hijau!5e0!3m2!1sid!2sid!4v1701942824996!5m2!1sid!2sid",
+            maps:
+              "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.3494264236692!2d106.78892859999999!3d-6.2175673!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f7cc70ce5a39%3A0x2ad1d2e9cc5cd357!2sLA.PANG.AN%2045%20Permata%20Hijau!5e0!3m2!1sid!2sid!4v1701942824996!5m2!1sid!2sid",
 
             whatsappCommunity:
               "https://chat.whatsapp.com/IZhOxHR2Tik9Y6bRJhAVhx",
@@ -144,7 +145,8 @@ export default {
             city: "Medan",
             address:
               "Jl. Rahayu, Pasar VI Tembung Kec. Percut Sei Tuan, Kabupaten Deli Serdang",
-            maps: "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7964.028638092421!2d98.7689968!3d3.5841861!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x303137316d523615%3A0x9762cdeb0682def9!2sRahayu%20Mini%20Soccer!5e0!3m2!1sid!2sid!4v1701942689597!5m2!1sid!2sid",
+            maps:
+              "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7964.028638092421!2d98.7689968!3d3.5841861!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x303137316d523615%3A0x9762cdeb0682def9!2sRahayu%20Mini%20Soccer!5e0!3m2!1sid!2sid!4v1701942689597!5m2!1sid!2sid",
             whatsappCommunity:
               "https://chat.whatsapp.com/FkNsftkEpx9LLvLJBBd7Vv",
             benefits: [
@@ -202,85 +204,85 @@ export default {
               },
             ],
           },
-          {
-            name: "D37 Duren Tiga",
-            isAvailable: false,
-            images: "d-37.svg",
-            city: "Jakarta Selatan",
-          },
-          {
-            name: "Epic Wesoccer Menteng",
-            isAvailable: false,
-            images: "epic-wesoccer.svg",
-            city: "Jakarta Selatan",
-          },
-          {
-            name: "Pancoran Soccer Field",
-            isAvailable: false,
-            images: "psf.svg",
-            city: "Jakarta Selatan",
-          },
-          {
-            name: "Main Gandaria",
-            isAvailable: false,
-            images: "main-gandaria.svg",
-            city: "Jakarta Selatan",
-          },
-          {
-            name: "ASATU Arena Cikini",
-            isAvailable: false,
-            images: "asatu-cikini.webp",
-            classImage: "rounded",
-            city: "Jakarta Pusat",
-          },
-          {
-            name: "Revo Duren Sawit",
-            isAvailable: false,
-            images: "revo.webp",
-            classImage: "rounded",
+          // {
+          //   name: "D37 Duren Tiga",
+          //   isAvailable: false,
+          //   images: "d-37.svg",
+          //   city: "Jakarta Selatan",
+          // },
+          // {
+          //   name: "Epic Wesoccer Menteng",
+          //   isAvailable: false,
+          //   images: "epic-wesoccer.svg",
+          //   city: "Jakarta Selatan",
+          // },
+          // {
+          //   name: "Pancoran Soccer Field",
+          //   isAvailable: false,
+          //   images: "psf.svg",
+          //   city: "Jakarta Selatan",
+          // },
+          // {
+          //   name: "Main Gandaria",
+          //   isAvailable: false,
+          //   images: "main-gandaria.svg",
+          //   city: "Jakarta Selatan",
+          // },
+          // {
+          //   name: "ASATU Arena Cikini",
+          //   isAvailable: false,
+          //   images: "asatu-cikini.webp",
+          //   classImage: "rounded",
+          //   city: "Jakarta Pusat",
+          // },
+          // {
+          //   name: "Revo Duren Sawit",
+          //   isAvailable: false,
+          //   images: "revo.webp",
+          //   classImage: "rounded",
 
-            city: "Jakarta Timur",
-          },
-          {
-            name: "POP Pulomas",
-            isAvailable: false,
-            images: "pulomas.webp",
-            classImage: "rounded ",
-            city: "Jakarta Timur",
-          },
-          {
-            name: "Centro Utan Jati",
-            isAvailable: false,
-            images: "centro.webp",
-            classImage: "rounded",
-            city: "Jakarta Barat",
-          },
-          {
-            name: "Rival Sport Sunter",
-            isAvailable: false,
-            images: "rival-sunter.webp",
-            classImage: "rounded",
+          //   city: "Jakarta Timur",
+          // },
+          // {
+          //   name: "POP Pulomas",
+          //   isAvailable: false,
+          //   images: "pulomas.webp",
+          //   classImage: "rounded ",
+          //   city: "Jakarta Timur",
+          // },
+          // {
+          //   name: "Centro Utan Jati",
+          //   isAvailable: false,
+          //   images: "centro.webp",
+          //   classImage: "rounded",
+          //   city: "Jakarta Barat",
+          // },
+          // {
+          //   name: "Rival Sport Sunter",
+          //   isAvailable: false,
+          //   images: "rival-sunter.webp",
+          //   classImage: "rounded",
 
-            city: "Jakarta Utara",
-          },
-          {
-            name: "Gator Arena PIK",
-            isAvailable: false,
-            images: "gator-arena.webp",
-            city: "Jakarta Utara",
-          },
-          {
-            name: "Jet One Bintaro",
-            isAvailable: false,
-            images: "jet-one-bintaro.webp",
-            city: "Tangerang",
-          },
-          {
-            name: "DNA Arena Cinere",
-            isAvailable: false,
-            images: "arena-cinere.webp",
-            city: "Depok",
-          },
+          //   city: "Jakarta Utara",
+          // },
+          // {
+          //   name: "Gator Arena PIK",
+          //   isAvailable: false,
+          //   images: "gator-arena.webp",
+          //   city: "Jakarta Utara",
+          // },
+          // {
+          //   name: "Jet One Bintaro",
+          //   isAvailable: false,
+          //   images: "jet-one-bintaro.webp",
+          //   city: "Tangerang",
+          // },
+          // {
+          //   name: "DNA Arena Cinere",
+          //   isAvailable: false,
+          //   images: "arena-cinere.webp",
+          //   city: "Depok",
+          // },
         ],
       },
     };

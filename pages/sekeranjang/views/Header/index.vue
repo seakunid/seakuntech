@@ -21,7 +21,7 @@
           class="tn:text-[20px] md:text-[28px] lg:text-[40px] text-[#474747] tn:mt-1 md:mt-2 lg:mt-4"
         >
           Belanja bareng di
-          <span class="text-secondary font-bold">seakun.id</span>!
+          <span class="text-secondary font-bold">Seakun</span>!
         </h2>
         <p
           class="tn:text-[14px] md:text-[16px] lg:text-[18px] xl:text-[20px] tn:mt-4 lg:mt-8 text-[#A0A3BD] xl:tracking-wide xl:leading-8"
@@ -48,6 +48,6 @@ export default {};
 
 <style>
 body {
-  font-family: 'DM Sans', sans-serif !important;
+  font-family: "DM Sans", sans-serif !important;
 }
 </style>

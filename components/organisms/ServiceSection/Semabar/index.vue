@@ -114,10 +114,7 @@
       </section>
       <section>
         <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-3 md:gap-4 lg:gap-5">
-          <div
-            v-for="(data, id) in dataVenue.list"
-            :key="id"
-            >
+          <div v-for="(data, id) in dataVenue.list" :key="id">
             <template v-if="data.isAvailable">
               <NuxtLink :to="`/semabar/details-venue?detailVenue=${data.slug}`">
                 <CardService :cardData="data" />
@@ -129,7 +126,7 @@
           </div>
         </div>
       </section>
-      <div
+      <!-- <div
         class="flex gap-2 items-center pt-6 mx-auto w-max cursor-pointer"
         @click="onShowMore"
         v-if="!allreadyDisplayData"
@@ -140,7 +137,7 @@
           Show more
         </p>
         <Chevron color="#00BA88" />
-      </div>
+      </div> -->
     </div>
   </div>
 </template>
@@ -241,85 +238,85 @@ export default {
             images: "rahayu-minisoccer.webp",
             city: "Medan",
           },
-          {
-            name: "D37 Duren Tiga",
-            isAvailable: false,
-            images: "d-37.svg",
-            city: "Jakarta Selatan",
-          },
-          {
-            name: "Epic Wesoccer Menteng",
-            isAvailable: false,
-            images: "epic-wesoccer.svg",
-            city: "Jakarta Selatan",
-          },
-          {
-            name: "Pancoran Soccer Field",
-            isAvailable: false,
-            images: "psf.svg",
-            city: "Jakarta Selatan",
-          },
-          {
-            name: "Main Gandaria",
-            isAvailable: false,
-            images: "main-gandaria.svg",
-            city: "Jakarta Selatan",
-          },
-          {
-            name: "ASATU Arena Cikini",
-            isAvailable: false,
-            images: "asatu-cikini.webp",
-            classImage: "rounded",
-            city: "Jakarta Pusat",
-          },
-          {
-            name: "Revo Duren Sawit",
-            isAvailable: false,
-            images: "revo.webp",
-            classImage: "rounded",
+          // {
+          //   name: "D37 Duren Tiga",
+          //   isAvailable: false,
+          //   images: "d-37.svg",
+          //   city: "Jakarta Selatan",
+          // },
+          // {
+          //   name: "Epic Wesoccer Menteng",
+          //   isAvailable: false,
+          //   images: "epic-wesoccer.svg",
+          //   city: "Jakarta Selatan",
+          // },
+          // {
+          //   name: "Pancoran Soccer Field",
+          //   isAvailable: false,
+          //   images: "psf.svg",
+          //   city: "Jakarta Selatan",
+          // },
+          // {
+          //   name: "Main Gandaria",
+          //   isAvailable: false,
+          //   images: "main-gandaria.svg",
+          //   city: "Jakarta Selatan",
+          // },
+          // {
+          //   name: "ASATU Arena Cikini",
+          //   isAvailable: false,
+          //   images: "asatu-cikini.webp",
+          //   classImage: "rounded",
+          //   city: "Jakarta Pusat",
+          // },
+          // {
+          //   name: "Revo Duren Sawit",
+          //   isAvailable: false,
+          //   images: "revo.webp",
+          //   classImage: "rounded",
 
-            city: "Jakarta Timur",
-          },
-          {
-            name: "POP Pulomas",
-            isAvailable: false,
-            images: "pulomas.webp",
-            classImage: "rounded ",
-            city: "Jakarta Timur",
-          },
-          {
-            name: "Centro Utan Jati",
-            isAvailable: false,
-            images: "centro.webp",
-            classImage: "rounded",
-            city: "Jakarta Barat",
-          },
-          {
-            name: "Rival Sport Sunter",
-            isAvailable: false,
-            images: "rival-sunter.webp",
-            classImage: "rounded",
+          //   city: "Jakarta Timur",
+          // },
+          // {
+          //   name: "POP Pulomas",
+          //   isAvailable: false,
+          //   images: "pulomas.webp",
+          //   classImage: "rounded ",
+          //   city: "Jakarta Timur",
+          // },
+          // {
+          //   name: "Centro Utan Jati",
+          //   isAvailable: false,
+          //   images: "centro.webp",
+          //   classImage: "rounded",
+          //   city: "Jakarta Barat",
+          // },
+          // {
+          //   name: "Rival Sport Sunter",
+          //   isAvailable: false,
+          //   images: "rival-sunter.webp",
+          //   classImage: "rounded",
 
-            city: "Jakarta Utara",
-          },
-          {
-            name: "Gator Arena PIK",
-            isAvailable: false,
-            images: "gator-arena.webp",
-            city: "Jakarta Utara",
-          },
-          {
-            name: "Jet One Bintaro",
-            isAvailable: false,
-            images: "jet-one-bintaro.webp",
-            city: "Tangerang",
-          },
-          {
-            name: "DNA Arena Cinere",
-            isAvailable: false,
-            images: "arena-cinere.webp",
-            city: "Depok",
-          },
+          //   city: "Jakarta Utara",
+          // },
+          // {
+          //   name: "Gator Arena PIK",
+          //   isAvailable: false,
+          //   images: "gator-arena.webp",
+          //   city: "Jakarta Utara",
+          // },
+          // {
+          //   name: "Jet One Bintaro",
+          //   isAvailable: false,
+          //   images: "jet-one-bintaro.webp",
+          //   city: "Tangerang",
+          // },
+          // {
+          //   name: "DNA Arena Cinere",
+          //   isAvailable: false,
+          //   images: "arena-cinere.webp",
+          //   city: "Depok",
+          // },
         ],
       },
       cities: [
@@ -366,8 +363,8 @@ export default {
   // },
   methods: {
     goToDetailsVenue(data) {
-    console.log("data");
-    console.log(data);
+      console.log("data");
+      console.log(data);
       if (data.isAvailable) {
         window.location.href = `semabar/details-venue?detailVenue=${data.slug}`;
       }

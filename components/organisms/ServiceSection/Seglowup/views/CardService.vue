@@ -1,6 +1,9 @@
 <template>
   <div class="bg-white p-3 rounded-[6px] w-full">
-    <NuxtLink to="/">
+    <a
+      href="
+      https://api.whatsapp.com/send/?phone=6282124852232&text=%22Hi%20min,%20saya%20ingin%20bergabung%22&type=phone_number&app_absent=0"
+    >
       <header
         class="bg-cover w-full h-[106px]"
         :style="`background-image: url(/images/seglowup/background/series-${id}.webp); background-size: 100%;`"
@@ -64,7 +67,7 @@
           </div>
         </div>
       </section>
-    </NuxtLink>
+    </a>
   </div>
 </template>
 

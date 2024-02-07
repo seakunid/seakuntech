@@ -15,7 +15,7 @@ import Header from "./views/Header";
 import OrderFlow from "./views/OrderFlow";
 import ProductList from "./views/ProductList";
 import ProductSubmitBanner from "./views/ProductSubmitBanner";
-import Footer from "./views/Footer.vue";
+import Footer from "~/components/mollecules/Footer";
 export default {
   components: {
     Navbar,

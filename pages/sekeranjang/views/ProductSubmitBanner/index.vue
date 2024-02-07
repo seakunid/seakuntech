@@ -29,12 +29,15 @@
             <b>barengan beli banyak</b> untuk mendapatkan potongan harga lebih
             banyak.
           </p>
-          <Button
-            class="tn:mt-6 tn:py-4 font-bold tn:w-full md:w-1/2"
-            variant="primary"
-            label="Ajukan Sekarang"
-            @click="$router.push('/sekeranjang/create-product')"
-          />
+          <a
+            href="https://api.whatsapp.com/send/?phone=6282124852232&text=%22Hi%20min,%20saya%20ingin%20mengajukan%20produk%20patungan%22&type=phone_number&app_absent=0"
+          >
+            <Button
+              class="tn:mt-6 tn:py-4 font-bold tn:w-full md:w-1/2 border border-white rounded"
+              variant="primary"
+              label="Ajukan Sekarang"
+            />
+          </a>
         </div>
         <div class="w-[350px] tn:hidden md:block">
           <img
@@ -49,7 +52,7 @@
 </template>
 
 <script>
-import Button from '~/components/atoms/Button';
+import Button from "~/components/atoms/Button";
 export default {
   components: {
     Button,

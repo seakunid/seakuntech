@@ -8,13 +8,16 @@
 
     <div>
       <div class="tn:mt-6 md:mt-10 flex justify-center items-start flex-wrap">
-        <ProductCard
-          class="tn:m-1 md:m-3"
-          v-for="(productData, id) in productsData.list"
-          :key="id"
-          :product="productData"
-          @onClickProduct="onClickProduct"
-        />
+        <a
+          href="https://api.whatsapp.com/send/?phone=6282124852232&text=Hi%20min,%20saya%20ingin%20bergabung&type=phone_number&app_absent=0"
+        >
+          <ProductCard
+            class="tn:m-1 md:m-3"
+            v-for="(productData, id) in productsData.list"
+            :key="id"
+            :product="productData"
+          />
+        </a>
       </div>
     </div>
     <div v-if="!productsData.loading" class="tn:hidden md:block md:mt-14">
