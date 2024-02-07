@@ -95,27 +95,15 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped>
-.form-content {
-  svg {
-    width: 16px;
-    height: auto;
-    fill: #a0a3bd;
-  }
-  .icon-left {
-    position: absolute;
-    right: 0.75rem;
-    top: 1.25rem;
-  }
-  // [type='date'] {
-  //   background: #fff url('/images/icons/atoms/calendar.svg') 97% 50% no-repeat;
-  // }
-  // [type='date']::-webkit-inner-spin-button {
-  //   display: none;
-  // }
-  // [type='date']::-webkit-calendar-picker-indicator {
-  //   opacity: 0;
-  //   cursor: pointer;
-  // }
+<style scoped>
+svg {
+  width: 16px;
+  height: auto;
+  fill: #a0a3bd;
+}
+.icon-left {
+  position: absolute;
+  right: 0.75rem;
+  top: 1.25rem;
 }
 </style>

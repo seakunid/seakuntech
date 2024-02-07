@@ -1,3 +1,13 @@
+<!-- <template>
+  <Tutorial/>
+</template>
+
+<script>
+export default {
+  name: 'IndexPage'
+}
+</script> -->
+
 <template>
   <div>
     <Navbar />
@@ -19,7 +29,7 @@ import ProductSection from "~/components/organisms/ProductSection/index.vue";
 import OrderFlowSection from "~/components/organisms/OrderFlowSection/index.vue";
 import TestimonySection from "~/components/organisms/TestimonySection/index.vue";
 import Footer from "../components/mollecules/Footer.vue";
-export default defineComponent({
+export default {
   components: {
     Navbar,
     HeaderSection,
@@ -35,5 +45,5 @@ export default defineComponent({
       hello: "hello world",
     };
   },
-});
+};
 </script>

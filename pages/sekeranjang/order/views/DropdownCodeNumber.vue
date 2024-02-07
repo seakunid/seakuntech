@@ -31,7 +31,7 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped>
+<style>
 .payment-list {
   position: absolute;
   top: 0;
@@ -40,9 +40,9 @@ export default {
   max-height: 200px;
   overflow-y: auto;
   list-style: none; /* Remove list bullets */
-  ul {
-    padding-left: 24px;
-  }
+}
+.payment-list.ul {
+  padding-left: 24px;
 }
 
 .slide-up-enter-active {

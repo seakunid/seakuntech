@@ -1,28 +1,26 @@
 {
-  "name": "nuxt-app",
+  "name": "seakun-tech",
+  "version": "1.0.0",
   "private": true,
-  "type": "module",
   "scripts": {
+    "dev": "nuxt",
     "build": "nuxt build",
-    "dev": "nuxt dev",
-    "generate": "nuxt generate",
-    "preview": "nuxt preview",
-    "postinstall": "nuxt prepare",
     "start": "nuxt start",
-    "deploy": "push-dir --dir=dist --branch=gh-pages --cleanup",
-    "deploy2": "gh-pages --dotfiles -d .output/public"
-  },
-  "devDependencies": {
-    "autoprefixer": "^10.4.16",
-    "nuxt": "^3.9.0",
-    "postcss": "^8.4.33",
-    "push-dir": "^0.4.1",
-    "sass": "^1.70.0",
-    "tailwindcss": "^3.4.1",
-    "vue": "^3.4.5",
-    "vue-router": "^4.2.5"
+    "generate": "nuxt generate",
+    "deploy": "push-dir --dir=dist --branch=gh-pages --cleanup"
   },
   "dependencies": {
-    "gh-pages": "^6.1.1"
+    "@nuxtjs/axios": "^5.13.6",
+    "core-js": "^3.25.3",
+    "nuxt": "^2.15.8",
+    "sass-loader": "^14.1.0",
+    "vue": "^2.7.10",
+    "vue-server-renderer": "^2.7.10",
+    "vue-template-compiler": "^2.7.10"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.17",
+    "postcss": "^8.4.34",
+    "tailwindcss": "^3.4.1"
   }
 }

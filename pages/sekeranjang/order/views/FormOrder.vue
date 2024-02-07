@@ -162,7 +162,7 @@ import Button from "~/components/atoms/Button.vue";
 import CheckedBox from "~/assets/images/icon/checked-box.svg?inline";
 import UncheckBox from "~/assets/images/icon/uncheck-box.svg?inline";
 import ButtonDrop from "~/components/atoms/ButtonDropDownNew";
-import DropdownCodeNumber from "./DropdownCodeNumber.vue";
+// import DropdownCodeNumber from "./DropdownCodeNumber.vue";
 import ProductOrderCard from "./ProductOrderCard.vue";
 import PromoCard from "./PromoCard.vue";
 import { internationalPhoneNumbers } from "~/constants/code-phone.js";
@@ -175,7 +175,7 @@ export default {
     Button,
     InputForm,
     ButtonDrop,
-    DropdownCodeNumber,
+    // DropdownCodeNumber,
     ProductOrderCard,
     CheckedBox,
     UncheckBox,

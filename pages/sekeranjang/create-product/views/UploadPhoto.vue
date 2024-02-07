@@ -75,9 +75,8 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped>
-.form-content {
-  svg {
+<style>
+.form-content.svg {
     width: 16px;
     height: auto;
     fill: #a0a3bd;
@@ -87,7 +86,6 @@ export default {
     right: 0.75rem;
     top: 1.25rem;
   }
-}
 .label-upload {
   display: inline-block;
   font-family: sans-serif;
@@ -96,6 +94,7 @@ export default {
   margin-top: 1rem;
   border: 1px #a0a3bd dashed;
 
+}
   svg {
     fill: #a0a3bd;
     display: inline-block;
@@ -103,5 +102,4 @@ export default {
     height: auto;
     margin-right: 12px;
   }
-}
 </style>

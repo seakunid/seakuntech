@@ -1,16 +1,16 @@
-const defaultTheme = require("tailwindcss/defaultTheme");
-const colors = require("tailwindcss/colors");
-const plugin = require("tailwindcss/plugin");
+/** @type {import('tailwindcss').Config} */
+const defaultTheme = require('tailwindcss/defaultTheme');
+const plugin = require('tailwindcss/plugin');
 
 module.exports = {
   content: [
-    "./components/**/*.{vue,js}",
+    "./components/**/*.{js,vue,ts}",
     "./layouts/**/*.vue",
     "./pages/**/*.vue",
     "./plugins/**/*.{js,ts}",
-    "./nuxt.config.{js,ts}",
+    "./app.vue",
+    "./error.vue",
   ],
-  darkMode: false, // or 'media' or 'class'
   theme: {
     screens: {
       tn: "0px",
@@ -34,12 +34,6 @@ module.exports = {
         "green-primary": "#08A081",
       },
     },
-  },
-  variants: {
-    extend: {},
-  },
-  corePlugins: {
-    container: false,
   },
   plugins: [
     plugin(function ({ addComponents }) {
@@ -124,4 +118,5 @@ module.exports = {
       });
     }),
   ],
-};
+}
+

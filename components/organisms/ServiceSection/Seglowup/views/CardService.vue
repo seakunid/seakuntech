@@ -143,7 +143,7 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped>
+<style scoped>
 .font-nunito {
   font-family: "Nunito Sans", sans-serif;
 }

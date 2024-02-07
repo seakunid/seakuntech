@@ -64,11 +64,9 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped>
-.button-dropdown {
-  :disabled {
+<style scoped>
+.button-dropdown:disabled {
     cursor: no-drop;
     background: #efefef !important;
   }
-}
 </style>
